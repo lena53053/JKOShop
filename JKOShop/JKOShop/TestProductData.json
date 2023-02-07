@@ -1,0 +1,634 @@
+[
+  {
+    "id": "63e27f5b566cd6b497ce6097",
+    "name": "Tanya eu occaecat cillum ullamco pariatur eu qui aute irure sint qui in proident est nostrud aliqua ad",
+    "price": 19,
+    "brand": "anim",
+    "imgLinkList": [
+      "occaecat",
+      "officia"
+    ],
+    "category": [
+      "ADF",
+      "BCD"
+    ],
+    "promoName": "ad",
+    "stock": 39,
+    "description": "eu occaecat cillum ullamco pariatur eu qui aute irure sint qui in proident est nostrud aliqua ad do incididunt exercitation occaecat velit nulla qui excepteur exercitation reprehenderit elit cillum quis quis do elit culpa aliqua cupidatat adipisicing officia fugiat minim veniam consequat consectetur reprehenderit aliqua occaecat occaecat voluptate dolore nisi consequat ipsum est qui ipsum veniam exercitation esse sint laboris officia adipisicing duis sint aliqua est eu non anim magna nisi eu magna ullamco eu sit officia ullamco voluptate non ad laboris aliquip sint nostrud culpa occaecat ipsum sit irure ullamco labore ex sint enim labore veniam fugiat fugiat veniam",
+    "tags": [
+      "incididunt"
+    ]
+  },
+  {
+    "id": "63e27f5b621de74b6d32842d",
+    "name": "Barrera",
+    "price": 83,
+    "brand": "duis",
+    "imgLinkList": [
+      "officia",
+      "ut",
+      "cupidatat",
+      "labore"
+    ],
+    "category": [
+      "ABC"
+    ],
+    "promoName": "commodo",
+    "stock": 17,
+    "description": "dolore amet consectetur ullamco elit consequat tempor eu consequat irure eiusmod exercitation ea voluptate eiusmod voluptate dolor ipsum exercitation elit tempor dolore Lorem labore in adipisicing enim nostrud voluptate irure aute occaecat ut pariatur eu aliquip fugiat ut quis ipsum veniam cillum elit exercitation proident sit est deserunt tempor cillum voluptate pariatur elit nisi duis elit id dolore occaecat qui dolor consectetur ad in amet amet consectetur ipsum laborum enim reprehenderit in pariatur eu magna ea sint excepteur sint labore ipsum anim ut elit cupidatat sunt occaecat sint ipsum adipisicing duis laborum occaecat id esse aliquip minim aliqua elit do",
+    "tags": [
+      "sunt",
+      "nulla",
+      "amet"
+    ]
+  },
+  {
+    "id": "63e27f5bc6a9f9f20204c003",
+    "name": "Mejia",
+    "price": 8,
+    "brand": "ea",
+    "imgLinkList": [
+      "commodo",
+      "cillum",
+      "irure",
+      "officia"
+    ],
+    "category": [
+      "BCD",
+      "ADF"
+    ],
+    "promoName": "cupidatat",
+    "stock": 82,
+    "description": "laboris voluptate dolore et adipisicing dolore nostrud nulla occaecat do anim officia dolore Lorem fugiat voluptate eiusmod nisi in minim consequat veniam amet ipsum voluptate elit esse ut nulla esse dolore deserunt non ea exercitation dolor eu fugiat veniam reprehenderit culpa commodo est ut irure dolore culpa laboris amet ullamco duis consequat officia voluptate culpa cillum veniam enim commodo aliquip ad enim laboris consequat anim esse sint et culpa adipisicing consectetur enim cillum voluptate exercitation dolore adipisicing laborum culpa anim sunt Lorem laboris aliquip laborum aute nisi cupidatat cillum dolor reprehenderit in exercitation commodo consectetur aute in ut eu enim",
+    "tags": [
+      "amet",
+      "enim",
+      "cupidatat",
+      "pariatur"
+    ]
+  },
+  {
+    "id": "63e27f5ba6a084a7c8d51568",
+    "name": "Amelia",
+    "price": 80,
+    "brand": "commodo",
+    "imgLinkList": [
+      "nisi",
+      "nulla"
+    ],
+    "category": [
+      "ADF"
+    ],
+    "promoName": "culpa",
+    "stock": 70,
+    "description": "cillum ex mollit magna ut nostrud consectetur enim Lorem irure irure sit enim nostrud anim quis cillum officia pariatur qui dolor minim consequat ipsum et nisi velit officia minim nisi ipsum excepteur sit mollit adipisicing aute pariatur enim ut anim enim fugiat dolor deserunt pariatur mollit irure dolor reprehenderit esse minim tempor eiusmod anim velit dolore magna aliquip tempor adipisicing est do occaecat laboris non nostrud laborum in exercitation proident esse veniam cupidatat enim magna eiusmod nulla dolore dolore do ullamco reprehenderit irure labore amet anim quis velit reprehenderit amet consequat et exercitation deserunt laborum dolore ea aute magna do",
+    "tags": [
+      "duis"
+    ]
+  },
+  {
+    "id": "63e27f5b9fe187246f32e7a1",
+    "name": "Harding",
+    "price": 84,
+    "brand": "laboris",
+    "imgLinkList": [
+      "pariatur",
+      "reprehenderit",
+      "officia"
+    ],
+    "category": [
+      "ODJ"
+    ],
+    "promoName": "labore",
+    "stock": 63,
+    "description": "adipisicing ut sint magna in exercitation adipisicing eiusmod nulla ea laborum est aliqua commodo nulla tempor esse ut dolor exercitation occaecat do magna incididunt officia commodo pariatur nostrud aliquip anim nisi veniam sunt ipsum voluptate duis excepteur deserunt nisi aliquip dolor minim occaecat fugiat in nostrud est minim proident incididunt qui minim excepteur sint do irure sunt Lorem officia ipsum veniam excepteur nostrud ullamco anim cillum adipisicing dolor Lorem duis ex dolore aliquip irure magna ullamco esse nisi duis commodo labore do sint consectetur anim cupidatat incididunt pariatur cillum officia esse eiusmod ipsum Lorem in voluptate aliquip proident fugiat non",
+    "tags": [
+      "ex",
+      "qui",
+      "qui",
+      "enim"
+    ]
+  },
+  {
+    "id": "63e27f5bf64eccfcf703204e",
+    "name": "Mercado",
+    "price": 15,
+    "brand": "aute",
+    "imgLinkList": [
+      "ad",
+      "exercitation",
+      "cillum",
+      "est"
+    ],
+    "category": [
+      "ADF"
+    ],
+    "promoName": "laborum",
+    "stock": 95,
+    "description": "culpa nisi minim velit aliquip aliqua minim officia cillum voluptate voluptate duis sunt eu pariatur exercitation nostrud reprehenderit eiusmod id dolore incididunt deserunt do culpa velit voluptate elit in excepteur ullamco labore dolor culpa culpa magna adipisicing excepteur sint velit cupidatat nisi ut esse elit aliqua in adipisicing occaecat non exercitation amet culpa sunt labore officia cillum nisi laboris occaecat nulla ea consequat laborum cupidatat nulla ut cupidatat quis veniam pariatur tempor in amet sint in non commodo id consequat velit do et commodo ad anim esse sint duis et tempor eiusmod labore velit irure fugiat proident minim consequat ea",
+    "tags": [
+      "ex"
+    ]
+  },
+  {
+    "id": "63e27f5bea83adccd834211c",
+    "name": "Faith",
+    "price": 52,
+    "brand": "exercitation",
+    "imgLinkList": [
+      "reprehenderit"
+    ],
+    "category": [
+      "ODJ",
+      "BCD"
+    ],
+    "promoName": "irure",
+    "stock": 55,
+    "description": "elit tempor excepteur incididunt officia excepteur occaecat consequat sunt esse ea nisi ipsum proident ex ex quis id labore in nisi qui aliquip cupidatat deserunt do proident labore minim quis pariatur occaecat mollit Lorem cupidatat anim duis commodo ex proident dolore cupidatat minim cillum excepteur ut consectetur consectetur amet magna fugiat est dolore et aliquip tempor exercitation ex sunt magna mollit veniam aute veniam mollit eu nisi et laborum incididunt Lorem consectetur reprehenderit ad dolor exercitation consectetur enim Lorem qui mollit in minim esse est eu officia velit amet laborum exercitation deserunt commodo dolore eiusmod irure incididunt ea non excepteur",
+    "tags": [
+      "nostrud",
+      "do",
+      "nulla",
+      "nostrud",
+      "amet"
+    ]
+  },
+  {
+    "id": "63e27f5bb49bd131e5bd5162",
+    "name": "Amber",
+    "price": 49,
+    "brand": "cupidatat",
+    "imgLinkList": [
+      "eu",
+      "culpa",
+      "do"
+    ],
+    "category": [
+      "ODJ",
+      "ODJ"
+    ],
+    "promoName": "mollit",
+    "stock": 76,
+    "description": "mollit duis irure magna anim enim ipsum duis amet veniam voluptate occaecat irure sint ut aute veniam sint consequat nulla sunt eu ut commodo dolore dolore labore labore minim nulla sit excepteur aliquip do elit adipisicing et commodo voluptate anim duis amet anim dolor labore aute cillum et consectetur adipisicing minim deserunt nulla in sunt sunt veniam tempor elit dolore eiusmod et Lorem sunt Lorem incididunt voluptate minim id exercitation sunt exercitation labore culpa incididunt est eiusmod esse dolore sit ex adipisicing in mollit officia ullamco non qui cillum eiusmod veniam irure Lorem ipsum pariatur incididunt dolore non eiusmod aliqua",
+    "tags": [
+      "non",
+      "incididunt",
+      "sint",
+      "cupidatat",
+      "et"
+    ]
+  },
+  {
+    "id": "63e27f5b711b32d7b87bdc56",
+    "name": "Weeks",
+    "price": 7,
+    "brand": "dolore",
+    "imgLinkList": [
+      "non",
+      "mollit",
+      "dolor",
+      "sunt"
+    ],
+    "category": [
+      "BCD",
+      "BCD"
+    ],
+    "promoName": "culpa",
+    "stock": 69,
+    "description": "cupidatat veniam voluptate exercitation non elit eu veniam excepteur proident ex aliquip in veniam laboris cillum laborum cupidatat anim fugiat consectetur eiusmod mollit dolor consectetur exercitation enim labore aliquip cillum ipsum qui ut consequat id mollit ullamco fugiat exercitation ipsum officia adipisicing officia et officia voluptate in laboris proident dolore ea tempor cillum consequat velit eiusmod nisi fugiat anim ex adipisicing enim amet est aliqua incididunt nostrud ad dolore labore sint ullamco tempor mollit anim reprehenderit voluptate et cillum aliquip reprehenderit velit duis nisi qui do nisi velit occaecat incididunt ea anim amet dolor proident in elit do dolor nulla",
+    "tags": [
+      "in",
+      "exercitation",
+      "consectetur",
+      "cupidatat",
+      "ullamco"
+    ]
+  },
+  {
+    "id": "63e27f5bfe7b6edf5ab8800a",
+    "name": "Cox",
+    "price": 10,
+    "brand": "esse",
+    "imgLinkList": [
+      "nostrud",
+      "proident"
+    ],
+    "category": [
+      "ADF",
+      "ODJ"
+    ],
+    "promoName": "duis",
+    "stock": 93,
+    "description": "id occaecat culpa mollit enim enim eiusmod ad labore ullamco culpa aliqua laborum sint veniam incididunt sunt laborum nostrud magna occaecat minim sint Lorem non qui occaecat reprehenderit nisi irure cillum velit esse pariatur mollit duis magna Lorem enim cupidatat et sint occaecat nostrud commodo eu commodo officia et eiusmod esse officia deserunt aliqua aliquip velit officia voluptate officia velit ex sunt proident id sit nulla ad consectetur occaecat ea dolor eu voluptate elit occaecat ipsum veniam ex nisi fugiat deserunt voluptate duis sint pariatur consequat minim commodo Lorem proident dolore incididunt ut magna adipisicing anim proident commodo et consequat",
+    "tags": [
+      "ea"
+    ]
+  },
+  {
+    "id": "63e27f5b14687ceafec21a76",
+    "name": "Kathy",
+    "price": 53,
+    "brand": "ut",
+    "imgLinkList": [
+      "esse",
+      "duis",
+      "id"
+    ],
+    "category": [
+      "ADF"
+    ],
+    "promoName": "dolore",
+    "stock": 85,
+    "description": "velit ut enim minim culpa enim duis do deserunt quis eu laboris nisi ullamco labore exercitation elit elit culpa aliqua anim esse dolore Lorem nostrud ea officia elit cupidatat nisi ea cillum consectetur commodo cillum nostrud nulla quis dolor fugiat aliqua fugiat mollit laborum qui occaecat anim mollit Lorem anim quis labore irure deserunt nulla ut proident et laborum deserunt et ipsum cillum officia occaecat incididunt veniam cupidatat amet ullamco irure veniam laboris anim quis cupidatat mollit tempor enim proident nostrud nostrud voluptate laboris dolor dolor consequat ex incididunt deserunt velit quis nisi nulla ea proident aute veniam elit sit",
+    "tags": [
+      "reprehenderit",
+      "anim",
+      "ipsum",
+      "enim",
+      "fugiat"
+    ]
+  },
+  {
+    "id": "63e27f5bf7e67022b406e145",
+    "name": "Gutierrez",
+    "price": 88,
+    "brand": "dolore",
+    "imgLinkList": [
+      "officia"
+    ],
+    "category": [
+      "ADF"
+    ],
+    "promoName": "quis",
+    "stock": 86,
+    "description": "eiusmod incididunt nulla magna incididunt et eiusmod nostrud veniam laboris cillum voluptate excepteur in occaecat laboris duis id adipisicing magna qui eiusmod sint ea deserunt consectetur veniam dolor fugiat commodo esse qui Lorem veniam id deserunt voluptate esse aliquip fugiat adipisicing enim nulla id incididunt veniam dolor esse consectetur ex minim culpa do velit Lorem voluptate nulla veniam proident qui eiusmod occaecat fugiat labore pariatur est deserunt aliqua elit ipsum excepteur eu laboris laborum qui do adipisicing occaecat laboris sit est voluptate sint proident magna fugiat non elit elit velit ut veniam excepteur esse sunt quis do sint magna ea",
+    "tags": [
+      "amet",
+      "labore",
+      "enim"
+    ]
+  },
+  {
+    "id": "63e27f5bae91e1a150abadb3",
+    "name": "Crystal",
+    "price": 67,
+    "brand": "qui",
+    "imgLinkList": [
+      "incididunt",
+      "et",
+      "occaecat",
+      "dolore",
+      "incididunt"
+    ],
+    "category": [
+      "ABC"
+    ],
+    "promoName": "Lorem",
+    "stock": 99,
+    "description": "adipisicing do commodo enim qui eiusmod eiusmod aliquip aliquip eiusmod ut ea aute dolore occaecat anim ut esse consequat ullamco irure dolor proident occaecat est irure in incididunt cillum labore adipisicing esse aute laboris eu irure velit aliquip eu incididunt duis amet laboris sunt cupidatat sint eiusmod nisi sit ullamco eiusmod quis quis tempor duis adipisicing et ea magna labore mollit minim commodo incididunt enim eu ullamco tempor esse ipsum consectetur sunt aute ipsum elit cillum aute cupidatat dolore reprehenderit laborum cillum consectetur pariatur labore sint voluptate amet nisi sit ullamco qui amet laborum ea do magna id enim ullamco",
+    "tags": [
+      "est"
+    ]
+  },
+  {
+    "id": "63e27f5bc693d649eb5604c0",
+    "name": "Angel",
+    "price": 81,
+    "brand": "proident",
+    "imgLinkList": [
+      "laborum",
+      "mollit",
+      "do",
+      "velit"
+    ],
+    "category": [
+      "ADF",
+      "IPO"
+    ],
+    "promoName": "laboris",
+    "stock": 29,
+    "description": "ut nisi ipsum voluptate mollit Lorem proident exercitation eu eiusmod minim quis nostrud laborum sint incididunt elit velit duis aute qui cillum sint aliquip et eiusmod laborum occaecat qui nostrud laboris cillum elit veniam eu ullamco velit duis aliquip ipsum amet tempor proident ad est aliqua dolore ad reprehenderit tempor in commodo id non in ut magna id laborum ipsum quis mollit dolore officia sint sint aliqua aute amet mollit consectetur adipisicing mollit sunt laboris cupidatat adipisicing pariatur dolor velit Lorem sint sint deserunt cupidatat pariatur nulla ipsum ut esse sunt voluptate officia sit ea culpa ipsum cillum pariatur sunt",
+    "tags": [
+      "Lorem"
+    ]
+  },
+  {
+    "id": "63e27f5bec036c0cfda66c6e",
+    "name": "Lucinda",
+    "price": 98,
+    "brand": "aliqua",
+    "imgLinkList": [
+      "commodo",
+      "officia",
+      "irure",
+      "eiusmod",
+      "nulla"
+    ],
+    "category": [
+      "ABC",
+      "ABC"
+    ],
+    "promoName": "aute",
+    "stock": 20,
+    "description": "consequat do eiusmod non Lorem dolor in eiusmod Lorem proident dolor ipsum commodo duis do aliquip consequat qui veniam non ipsum sint culpa in cillum exercitation excepteur voluptate occaecat commodo ea nostrud ex aliqua est fugiat irure mollit Lorem nisi magna officia mollit exercitation culpa adipisicing et Lorem duis do eiusmod est eu Lorem anim occaecat aliqua non sint adipisicing occaecat ullamco fugiat irure deserunt ullamco culpa laboris in in commodo ipsum aute reprehenderit ipsum id est aliqua occaecat sint cupidatat aliquip ut ut fugiat deserunt sint proident excepteur aliquip culpa culpa ipsum Lorem veniam id ullamco do adipisicing sit",
+    "tags": [
+      "dolore"
+    ]
+  },
+  {
+    "id": "63e27f5b62614416ab813bd6",
+    "name": "Francis",
+    "price": 52,
+    "brand": "cupidatat",
+    "imgLinkList": [
+      "ad",
+      "amet",
+      "veniam"
+    ],
+    "category": [
+      "BCD"
+    ],
+    "promoName": "non",
+    "stock": 56,
+    "description": "cupidatat amet et fugiat tempor minim tempor irure incididunt ullamco in quis officia occaecat enim non tempor exercitation velit minim et duis velit ea est do quis sint labore proident veniam ex reprehenderit commodo sunt consectetur officia irure ullamco eiusmod ex voluptate cupidatat reprehenderit deserunt est exercitation non ad id irure incididunt excepteur veniam esse est ullamco laboris aliquip laboris nisi culpa dolore officia do laborum deserunt nulla quis elit do tempor consequat Lorem adipisicing do consequat non Lorem elit aliquip amet aliqua laboris magna dolor consequat voluptate enim occaecat voluptate cupidatat nulla et eu dolore reprehenderit ea laboris ut",
+    "tags": [
+      "consectetur"
+    ]
+  },
+  {
+    "id": "63e27f5b03a304a48b6a33c2",
+    "name": "Geraldine",
+    "price": 94,
+    "brand": "consequat",
+    "imgLinkList": [
+      "deserunt",
+      "consectetur",
+      "ad",
+      "irure",
+      "non"
+    ],
+    "category": [
+      "ADF",
+      "ODJ"
+    ],
+    "promoName": "nulla",
+    "stock": 76,
+    "description": "quis eu adipisicing anim exercitation eu veniam duis cupidatat cupidatat Lorem enim pariatur veniam cillum laborum id esse ad duis dolor consequat dolore labore incididunt laborum exercitation anim in reprehenderit incididunt consequat nostrud nisi ex ipsum nulla laborum exercitation ut veniam exercitation mollit elit ipsum in est nostrud non officia est ullamco laborum mollit Lorem ad nisi aliqua amet exercitation non occaecat laborum minim adipisicing irure officia dolore est ipsum incididunt voluptate irure pariatur Lorem non minim deserunt reprehenderit do minim elit consequat pariatur et eu occaecat sint eu consequat sint et reprehenderit minim adipisicing labore ut consectetur minim exercitation",
+    "tags": [
+      "proident",
+      "deserunt"
+    ]
+  },
+  {
+    "id": "63e27f5b864a8030457d9102",
+    "name": "Moran",
+    "price": 4,
+    "brand": "velit",
+    "imgLinkList": [
+      "duis"
+    ],
+    "category": [
+      "ABC",
+      "BCD"
+    ],
+    "promoName": "eiusmod",
+    "stock": 95,
+    "description": "Lorem laborum aliqua reprehenderit duis enim fugiat id consectetur sit officia commodo tempor deserunt aute labore eu adipisicing fugiat mollit mollit et id dolor labore laboris ad quis incididunt eiusmod incididunt ex minim do culpa et consectetur esse eiusmod excepteur aliqua consectetur Lorem tempor aliqua enim ea sint sit non ad ut Lorem excepteur aute ea commodo adipisicing nulla officia nisi in sit mollit sunt est consectetur in nisi sunt culpa sunt aliqua incididunt adipisicing eu deserunt laboris aliqua exercitation excepteur irure consectetur tempor consequat et fugiat eu qui proident exercitation et esse id sunt commodo do aute aliqua et",
+    "tags": [
+      "qui"
+    ]
+  },
+  {
+    "id": "63e27f5bf950090441776d5c",
+    "name": "Maude",
+    "price": 98,
+    "brand": "qui",
+    "imgLinkList": [
+      "fugiat",
+      "aute"
+    ],
+    "category": [
+      "ODJ"
+    ],
+    "promoName": "laboris",
+    "stock": 99,
+    "description": "veniam ullamco elit aute ad do deserunt exercitation dolore voluptate cupidatat aute magna sit dolor dolore velit in velit nostrud nulla sint cupidatat ad fugiat anim dolor proident qui tempor sint cupidatat aliqua ad occaecat est quis aute laborum consequat reprehenderit incididunt esse Lorem esse consequat cillum magna enim in nulla ex ut tempor proident quis commodo exercitation anim culpa eiusmod minim aute reprehenderit cillum cillum officia et est esse nisi ipsum mollit ullamco laborum do velit est eiusmod laborum elit officia laboris labore sit reprehenderit veniam ex est tempor voluptate et duis non deserunt dolore minim veniam sunt deserunt",
+    "tags": [
+      "et",
+      "tempor"
+    ]
+  },
+  {
+    "id": "63e27f5b402df024c23ef669",
+    "name": "Kelley",
+    "price": 24,
+    "brand": "laborum",
+    "imgLinkList": [
+      "ipsum",
+      "do"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "culpa",
+    "stock": 55,
+    "description": "proident in aute dolore sint adipisicing duis tempor adipisicing in culpa non veniam ea Lorem laboris nisi eiusmod eu reprehenderit id pariatur id est enim fugiat ut sit id esse do ex eiusmod minim in nulla nisi cupidatat magna sunt et officia do sint ea enim proident Lorem pariatur quis ipsum officia duis aliquip veniam ullamco et cupidatat ad aliqua ad esse ad sunt minim magna nostrud nisi deserunt anim exercitation voluptate dolor nostrud velit culpa do tempor sint aliquip Lorem magna eu est cillum officia aliqua non sit veniam cillum sit sint irure laborum sint eiusmod velit laborum eiusmod",
+    "tags": [
+      "ea",
+      "sunt"
+    ]
+  },
+  {
+    "id": "63e27f5b1ddf0bba1534638b",
+    "name": "Stout",
+    "price": 31,
+    "brand": "sunt",
+    "imgLinkList": [
+      "magna",
+      "nulla",
+      "nulla"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "dolore",
+    "stock": 52,
+    "description": "voluptate tempor nostrud aliqua non excepteur in nostrud ea culpa amet veniam occaecat elit esse aliqua anim deserunt ex sint voluptate dolore veniam pariatur dolore et anim adipisicing est elit cillum commodo consequat tempor sint nisi minim cillum id do nulla laborum quis sint tempor labore Lorem nisi ipsum fugiat nostrud qui nostrud irure mollit exercitation ea velit nisi duis elit excepteur ad eiusmod esse aliquip irure occaecat laborum ipsum magna ad esse in fugiat sunt ad aliqua nisi qui irure non id duis deserunt aliquip laboris adipisicing ipsum cillum esse eu veniam et eiusmod sit id incididunt aute anim",
+    "tags": [
+      "aliqua"
+    ]
+  },
+  {
+    "id": "63e27f5bff48e5577a582f83",
+    "name": "Dalton",
+    "price": 66,
+    "brand": "quis",
+    "imgLinkList": [
+      "dolor",
+      "exercitation"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "non",
+    "stock": 47,
+    "description": "reprehenderit amet est cupidatat quis officia minim ipsum ad Lorem nulla Lorem laboris incididunt Lorem enim Lorem commodo occaecat incididunt in cupidatat sit ad quis deserunt deserunt mollit proident aliquip aliquip voluptate anim dolor ex tempor commodo quis sit mollit magna laborum laborum ullamco excepteur officia sit do dolore nisi ad incididunt mollit laboris nisi occaecat esse minim laboris labore commodo dolore Lorem dolore enim excepteur ut eu qui officia et quis elit exercitation enim laboris exercitation mollit commodo ex et irure sit esse mollit incididunt esse in cupidatat elit aliquip ex elit eiusmod nostrud cupidatat culpa incididunt reprehenderit exercitation",
+    "tags": [
+      "officia",
+      "ipsum",
+      "quis"
+    ]
+  },
+  {
+    "id": "63e27f5bb4c2d0dfac7cb4be",
+    "name": "Mamie",
+    "price": 36,
+    "brand": "mollit",
+    "imgLinkList": [
+      "minim",
+      "tempor"
+    ],
+    "category": [
+      "ODJ"
+    ],
+    "promoName": "irure",
+    "stock": 14,
+    "description": "duis et officia magna reprehenderit magna ad quis do tempor ipsum sit est qui ad in eiusmod tempor eu veniam nulla magna cillum occaecat tempor ad duis sint proident qui pariatur ad dolor non ex velit ea proident sint tempor pariatur pariatur aute aliqua commodo cillum reprehenderit ut occaecat dolor velit incididunt officia aliqua anim voluptate fugiat et eiusmod excepteur sit elit esse cillum sunt excepteur reprehenderit adipisicing amet eu qui ea proident nulla magna amet occaecat aliquip amet anim cillum elit voluptate sit ea veniam sit incididunt irure eu elit aute in id proident ut est veniam velit ullamco",
+    "tags": [
+      "cupidatat",
+      "laborum",
+      "ea",
+      "anim"
+    ]
+  },
+  {
+    "id": "63e27f5b76b0fb611e10248f",
+    "name": "Dolores",
+    "price": 32,
+    "brand": "aute",
+    "imgLinkList": [
+      "anim",
+      "incididunt"
+    ],
+    "category": [
+      "ODJ"
+    ],
+    "promoName": "enim",
+    "stock": 91,
+    "description": "nostrud irure qui cupidatat cillum irure ex dolor pariatur officia ipsum incididunt reprehenderit occaecat amet exercitation do ex aliqua id in minim exercitation laborum magna mollit officia veniam fugiat enim in aliquip anim quis ullamco do deserunt esse sit aliquip elit exercitation qui Lorem aliqua tempor cillum elit irure elit incididunt sunt sunt nisi id exercitation ullamco qui non irure veniam dolore cillum amet cupidatat ullamco aute sunt dolore aliqua nostrud nisi ullamco commodo irure aute enim labore irure irure reprehenderit ipsum aliqua mollit magna minim Lorem dolore dolore exercitation occaecat occaecat fugiat mollit consequat exercitation do labore minim deserunt",
+    "tags": [
+      "tempor",
+      "officia",
+      "exercitation",
+      "ea"
+    ]
+  },
+  {
+    "id": "63e27f5b72985c3f47c960b1",
+    "name": "Madeleine",
+    "price": 68,
+    "brand": "ullamco",
+    "imgLinkList": [
+      "eu",
+      "deserunt",
+      "cupidatat"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "nostrud",
+    "stock": 65,
+    "description": "veniam culpa qui ex ex ex dolore sunt labore non consequat occaecat officia tempor eu sunt culpa dolor cillum ut et enim do irure velit ullamco qui incididunt dolor exercitation sunt deserunt esse eu eu est elit in dolor est est cillum officia quis reprehenderit nulla aliquip adipisicing exercitation quis deserunt veniam excepteur aute ex laboris enim voluptate voluptate irure eiusmod non sit eu et ad laboris voluptate reprehenderit magna eu pariatur eu consequat consequat incididunt pariatur mollit occaecat pariatur mollit minim est commodo id Lorem laborum non pariatur in Lorem sint cillum consectetur consectetur esse cupidatat dolore mollit aute",
+    "tags": [
+      "adipisicing",
+      "non",
+      "occaecat",
+      "dolore"
+    ]
+  },
+  {
+    "id": "63e27f5b790cb23468186913",
+    "name": "Patel",
+    "price": 88,
+    "brand": "voluptate",
+    "imgLinkList": [
+      "esse",
+      "aliquip",
+      "dolor",
+      "id"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "voluptate",
+    "stock": 25,
+    "description": "nulla mollit qui cillum quis occaecat eu et minim ea minim minim veniam ipsum exercitation magna laborum eiusmod in minim minim culpa eu eiusmod adipisicing in laboris velit nostrud proident non nisi occaecat excepteur aliqua tempor anim voluptate qui et quis amet tempor labore voluptate ullamco aliquip sunt enim irure aliqua ipsum et est ad minim commodo est nulla consectetur quis ut ullamco amet non non do pariatur labore ea cupidatat incididunt commodo do ad deserunt anim irure cillum amet elit ipsum consequat sunt consequat laboris proident veniam excepteur nulla minim cupidatat ullamco excepteur sint veniam et mollit tempor ullamco",
+    "tags": [
+      "tempor",
+      "et"
+    ]
+  },
+  {
+    "id": "63e27f5b115220d3f4918fe0",
+    "name": "Mabel",
+    "price": 68,
+    "brand": "nulla",
+    "imgLinkList": [
+      "laborum"
+    ],
+    "category": [
+      "IPO"
+    ],
+    "promoName": "qui",
+    "stock": 67,
+    "description": "incididunt dolor voluptate id nulla do ipsum minim occaecat in ex id et tempor duis exercitation laborum consequat consectetur aute fugiat aute occaecat nulla mollit sunt excepteur Lorem anim cillum aute occaecat eu nostrud duis ad sunt reprehenderit aute laborum sit ut consequat laboris nulla consectetur voluptate enim nulla tempor sit enim nisi cillum velit enim in aliqua id ex ipsum labore nostrud voluptate duis enim nisi voluptate nostrud ea adipisicing reprehenderit est officia elit pariatur dolor sit in fugiat nostrud officia sint consequat enim officia et Lorem sunt excepteur nisi dolor non tempor excepteur do tempor qui id ut",
+    "tags": [
+      "aliqua",
+      "magna",
+      "adipisicing"
+    ]
+  },
+  {
+    "id": "63e27f5b0beff50e679acb04",
+    "name": "Mai",
+    "price": 20,
+    "brand": "aute",
+    "imgLinkList": [
+      "dolore",
+      "deserunt",
+      "ullamco",
+      "mollit"
+    ],
+    "category": [
+      "ABC"
+    ],
+    "promoName": "esse",
+    "stock": 24,
+    "description": "sit ad cupidatat sit consequat officia velit elit irure dolore proident ipsum minim qui reprehenderit anim magna exercitation eu cillum pariatur commodo esse ipsum ad cupidatat aute pariatur laboris laborum consequat ipsum ad exercitation commodo amet commodo ex commodo cupidatat fugiat cupidatat velit laboris officia qui ut reprehenderit occaecat eu quis cupidatat eu proident laborum exercitation duis anim amet adipisicing consequat aliquip nostrud sunt minim pariatur veniam eu id do cillum excepteur et mollit amet sint nostrud incididunt occaecat ullamco eiusmod in minim elit reprehenderit id cupidatat et mollit eiusmod pariatur ipsum adipisicing dolore culpa nostrud qui eiusmod occaecat laboris",
+    "tags": [
+      "aute",
+      "magna"
+    ]
+  },
+  {
+    "id": "63e27f5b2f752c3eeb389775",
+    "name": "Ball",
+    "price": 92,
+    "brand": "et",
+    "imgLinkList": [
+      "velit",
+      "officia",
+      "velit"
+    ],
+    "category": [
+      "ABC",
+      "ABC"
+    ],
+    "promoName": "occaecat",
+    "stock": 27,
+    "description": "ut ipsum eu pariatur fugiat laborum laboris amet nulla ullamco nisi adipisicing voluptate voluptate incididunt id tempor nulla consequat aute do amet pariatur reprehenderit adipisicing id nostrud nisi anim labore sint nostrud sit proident labore nostrud excepteur esse cupidatat ut cupidatat ad exercitation cillum sint irure voluptate sunt anim minim laborum ipsum duis ullamco qui laboris est dolore irure et sunt irure consequat ad laborum cillum officia reprehenderit non cillum non excepteur occaecat tempor incididunt nulla cillum ipsum id mollit labore mollit ipsum id ullamco aliquip esse excepteur occaecat nisi consectetur consectetur fugiat amet laborum anim officia ullamco duis veniam",
+    "tags": [
+      "consequat"
+    ]
+  }
+]

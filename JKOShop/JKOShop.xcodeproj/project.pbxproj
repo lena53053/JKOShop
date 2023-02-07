@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		399DB2110DD40F489EFA5E05 /* libPods-JKOShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */; };
+		BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262729913BD7001FA146 /* AppDelegate.swift */; };
+		BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262B29913BD7001FA146 /* ViewController.swift */; };
+		BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8262D29913BD7001FA146 /* Main.storyboard */; };
+		BFE8263229913BD7001FA146 /* JKOShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE8263029913BD7001FA146 /* JKOShop.xcdatamodeld */; };
+		BFE8263429913BD8001FA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE8263329913BD8001FA146 /* Assets.xcassets */; };
+		BFE8263729913BD8001FA146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8263529913BD8001FA146 /* LaunchScreen.storyboard */; };
+		BFE8264229913BD8001FA146 /* JKOShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8264129913BD8001FA146 /* JKOShopTests.swift */; };
+		BFE8264C29913BD8001FA146 /* JKOShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8264B29913BD8001FA146 /* JKOShopUITests.swift */; };
+		BFE8264E29913BD8001FA146 /* JKOShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8264D29913BD8001FA146 /* JKOShopUITestsLaunchTests.swift */; };
+		BFE8265C29913CC8001FA146 /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE8265B29913CC8001FA146 /* ItemListCell.xib */; };
+		BFE8265E29914134001FA146 /* ItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8265D29914134001FA146 /* ItemListCell.swift */; };
+		BFE826602991435E001FA146 /* ShoppingCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8265F2991435E001FA146 /* ShoppingCartManager.swift */; };
+		BFE8266B29914A5E001FA146 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8266A29914A5E001FA146 /* ProductManager.swift */; };
+		BFE8267129914E0B001FA146 /* TestProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE8267029914E0B001FA146 /* TestProductData.json */; };
+		BFE826742991510A001FA146 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826732991510A001FA146 /* ProductModel.swift */; };
+		BFE82678299155FD001FA146 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82677299155FD001FA146 /* JSONDecoder.swift */; };
+		BFE8267A299159E7001FA146 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82679299159E7001FA146 /* CartModel.swift */; };
+		BFE8267C29929BBF001FA146 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8267B29929BBF001FA146 /* ProductListVC.swift */; };
+		BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8267D29929C07001FA146 /* ProductListVM.swift */; };
+		BFE826812992A52B001FA146 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826802992A52B001FA146 /* UIViewController.swift */; };
+		BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826822992B041001FA146 /* ProductDetailVC.swift */; };
+		BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826842992B35D001FA146 /* ProductDetailVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFE8263E29913BD8001FA146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE8261C29913BD7001FA146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE8262329913BD7001FA146;
+			remoteInfo = JKOShop;
+		};
+		BFE8264829913BD8001FA146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE8261C29913BD7001FA146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE8262329913BD7001FA146;
+			remoteInfo = JKOShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DDEB52471444468107268A0 /* Pods-JKOShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKOShop.release.xcconfig"; path = "Target Support Files/Pods-JKOShop/Pods-JKOShop.release.xcconfig"; sourceTree = "<group>"; };
+		49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKOShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CB2F9E0622990FA42B9DA7 /* Pods-JKOShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKOShop.debug.xcconfig"; path = "Target Support Files/Pods-JKOShop/Pods-JKOShop.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE8262429913BD7001FA146 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE8262729913BD7001FA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFE8262B29913BD7001FA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFE8262E29913BD7001FA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFE8263129913BD7001FA146 /* JKOShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JKOShop.xcdatamodel; sourceTree = "<group>"; };
+		BFE8263329913BD8001FA146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFE8263629913BD8001FA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFE8263829913BD8001FA146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE8263D29913BD8001FA146 /* JKOShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKOShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE8264129913BD8001FA146 /* JKOShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKOShopTests.swift; sourceTree = "<group>"; };
+		BFE8264729913BD8001FA146 /* JKOShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKOShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE8264B29913BD8001FA146 /* JKOShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKOShopUITests.swift; sourceTree = "<group>"; };
+		BFE8264D29913BD8001FA146 /* JKOShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKOShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFE8265B29913CC8001FA146 /* ItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
+		BFE8265D29914134001FA146 /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
+		BFE8265F2991435E001FA146 /* ShoppingCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartManager.swift; sourceTree = "<group>"; };
+		BFE8266A29914A5E001FA146 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		BFE8267029914E0B001FA146 /* TestProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestProductData.json; sourceTree = "<group>"; };
+		BFE826732991510A001FA146 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		BFE82677299155FD001FA146 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		BFE82679299159E7001FA146 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		BFE8267B29929BBF001FA146 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		BFE8267D29929C07001FA146 /* ProductListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVM.swift; sourceTree = "<group>"; };
+		BFE826802992A52B001FA146 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		BFE826822992B041001FA146 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		BFE826842992B35D001FA146 /* ProductDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE8262129913BD7001FA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399DB2110DD40F489EFA5E05 /* libPods-JKOShop.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8263A29913BD8001FA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8264429913BD8001FA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6964E3D854A25A5FCC1618AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE8261B29913BD7001FA146 = {
+			isa = PBXGroup;
+			children = (
+				BFE8262629913BD7001FA146 /* JKOShop */,
+				BFE8264029913BD8001FA146 /* JKOShopTests */,
+				BFE8264A29913BD8001FA146 /* JKOShopUITests */,
+				BFE8262529913BD7001FA146 /* Products */,
+				D94CA0B6E2E875D6584175B3 /* Pods */,
+				6964E3D854A25A5FCC1618AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE8262529913BD7001FA146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8262429913BD7001FA146 /* JKOShop.app */,
+				BFE8263D29913BD8001FA146 /* JKOShopTests.xctest */,
+				BFE8264729913BD8001FA146 /* JKOShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE8262629913BD7001FA146 /* JKOShop */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8267F2992A51D001FA146 /* extensions */,
+				BFE82672299150FA001FA146 /* Model */,
+				BFE8265A29913CA1001FA146 /* XIB */,
+				BFE8262729913BD7001FA146 /* AppDelegate.swift */,
+				BFE8262B29913BD7001FA146 /* ViewController.swift */,
+				BFE8262D29913BD7001FA146 /* Main.storyboard */,
+				BFE8263329913BD8001FA146 /* Assets.xcassets */,
+				BFE8263529913BD8001FA146 /* LaunchScreen.storyboard */,
+				BFE8263829913BD8001FA146 /* Info.plist */,
+				BFE82661299149BB001FA146 /* DB */,
+				BFE8265F2991435E001FA146 /* ShoppingCartManager.swift */,
+				BFE8266A29914A5E001FA146 /* ProductManager.swift */,
+				BFE8267029914E0B001FA146 /* TestProductData.json */,
+				BFE82677299155FD001FA146 /* JSONDecoder.swift */,
+				BFE8267B29929BBF001FA146 /* ProductListVC.swift */,
+				BFE8267D29929C07001FA146 /* ProductListVM.swift */,
+				BFE826822992B041001FA146 /* ProductDetailVC.swift */,
+				BFE826842992B35D001FA146 /* ProductDetailVM.swift */,
+			);
+			path = JKOShop;
+			sourceTree = "<group>";
+		};
+		BFE8264029913BD8001FA146 /* JKOShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8264129913BD8001FA146 /* JKOShopTests.swift */,
+			);
+			path = JKOShopTests;
+			sourceTree = "<group>";
+		};
+		BFE8264A29913BD8001FA146 /* JKOShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8264B29913BD8001FA146 /* JKOShopUITests.swift */,
+				BFE8264D29913BD8001FA146 /* JKOShopUITestsLaunchTests.swift */,
+			);
+			path = JKOShopUITests;
+			sourceTree = "<group>";
+		};
+		BFE8265A29913CA1001FA146 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8265B29913CC8001FA146 /* ItemListCell.xib */,
+				BFE8265D29914134001FA146 /* ItemListCell.swift */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		BFE82661299149BB001FA146 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8263029913BD7001FA146 /* JKOShop.xcdatamodeld */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BFE82672299150FA001FA146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFE826732991510A001FA146 /* ProductModel.swift */,
+				BFE82679299159E7001FA146 /* CartModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFE8267F2992A51D001FA146 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFE826802992A52B001FA146 /* UIViewController.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		D94CA0B6E2E875D6584175B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1CB2F9E0622990FA42B9DA7 /* Pods-JKOShop.debug.xcconfig */,
+				0DDEB52471444468107268A0 /* Pods-JKOShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE8262329913BD7001FA146 /* JKOShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE8265129913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShop" */;
+			buildPhases = (
+				18F3DAF670BF935367C3CECC /* [CP] Check Pods Manifest.lock */,
+				BFE8262029913BD7001FA146 /* Sources */,
+				BFE8262129913BD7001FA146 /* Frameworks */,
+				BFE8262229913BD7001FA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKOShop;
+			productName = JKOShop;
+			productReference = BFE8262429913BD7001FA146 /* JKOShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFE8263C29913BD8001FA146 /* JKOShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE8265429913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShopTests" */;
+			buildPhases = (
+				BFE8263929913BD8001FA146 /* Sources */,
+				BFE8263A29913BD8001FA146 /* Frameworks */,
+				BFE8263B29913BD8001FA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE8263F29913BD8001FA146 /* PBXTargetDependency */,
+			);
+			name = JKOShopTests;
+			productName = JKOShopTests;
+			productReference = BFE8263D29913BD8001FA146 /* JKOShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFE8264629913BD8001FA146 /* JKOShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE8265729913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShopUITests" */;
+			buildPhases = (
+				BFE8264329913BD8001FA146 /* Sources */,
+				BFE8264429913BD8001FA146 /* Frameworks */,
+				BFE8264529913BD8001FA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE8264929913BD8001FA146 /* PBXTargetDependency */,
+			);
+			name = JKOShopUITests;
+			productName = JKOShopUITests;
+			productReference = BFE8264729913BD8001FA146 /* JKOShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE8261C29913BD7001FA146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BFE8262329913BD7001FA146 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					BFE8263C29913BD8001FA146 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BFE8262329913BD7001FA146;
+					};
+					BFE8264629913BD8001FA146 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = BFE8262329913BD7001FA146;
+					};
+				};
+			};
+			buildConfigurationList = BFE8261F29913BD7001FA146 /* Build configuration list for PBXProject "JKOShop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFE8261B29913BD7001FA146;
+			productRefGroup = BFE8262529913BD7001FA146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE8262329913BD7001FA146 /* JKOShop */,
+				BFE8263C29913BD8001FA146 /* JKOShopTests */,
+				BFE8264629913BD8001FA146 /* JKOShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE8262229913BD7001FA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE8267129914E0B001FA146 /* TestProductData.json in Resources */,
+				BFE8265C29913CC8001FA146 /* ItemListCell.xib in Resources */,
+				BFE8263729913BD8001FA146 /* LaunchScreen.storyboard in Resources */,
+				BFE8263429913BD8001FA146 /* Assets.xcassets in Resources */,
+				BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8263B29913BD8001FA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8264529913BD8001FA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18F3DAF670BF935367C3CECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JKOShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE8262029913BD7001FA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE8267C29929BBF001FA146 /* ProductListVC.swift in Sources */,
+				BFE8265E29914134001FA146 /* ItemListCell.swift in Sources */,
+				BFE826812992A52B001FA146 /* UIViewController.swift in Sources */,
+				BFE8266B29914A5E001FA146 /* ProductManager.swift in Sources */,
+				BFE826602991435E001FA146 /* ShoppingCartManager.swift in Sources */,
+				BFE82678299155FD001FA146 /* JSONDecoder.swift in Sources */,
+				BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */,
+				BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */,
+				BFE8267A299159E7001FA146 /* CartModel.swift in Sources */,
+				BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */,
+				BFE826742991510A001FA146 /* ProductModel.swift in Sources */,
+				BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */,
+				BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */,
+				BFE8263229913BD7001FA146 /* JKOShop.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8263929913BD8001FA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE8264229913BD8001FA146 /* JKOShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE8264329913BD8001FA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE8264C29913BD8001FA146 /* JKOShopUITests.swift in Sources */,
+				BFE8264E29913BD8001FA146 /* JKOShopUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFE8263F29913BD8001FA146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE8262329913BD7001FA146 /* JKOShop */;
+			targetProxy = BFE8263E29913BD8001FA146 /* PBXContainerItemProxy */;
+		};
+		BFE8264929913BD8001FA146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE8262329913BD7001FA146 /* JKOShop */;
+			targetProxy = BFE8264829913BD8001FA146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFE8262D29913BD7001FA146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE8262E29913BD7001FA146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFE8263529913BD8001FA146 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE8263629913BD8001FA146 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFE8264F29913BD8001FA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFE8265029913BD8001FA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE8265229913BD8001FA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CB2F9E0622990FA42B9DA7 /* Pods-JKOShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JKOShop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BFE8265329913BD8001FA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDEB52471444468107268A0 /* Pods-JKOShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JKOShop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BFE8265529913BD8001FA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKOShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JKOShop";
+			};
+			name = Debug;
+		};
+		BFE8265629913BD8001FA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKOShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JKOShop";
+			};
+			name = Release;
+		};
+		BFE8265829913BD8001FA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKOShop;
+			};
+			name = Debug;
+		};
+		BFE8265929913BD8001FA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9FTQ82AJY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lena.dev.JKOShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKOShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE8261F29913BD7001FA146 /* Build configuration list for PBXProject "JKOShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE8264F29913BD8001FA146 /* Debug */,
+				BFE8265029913BD8001FA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE8265129913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE8265229913BD8001FA146 /* Debug */,
+				BFE8265329913BD8001FA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE8265429913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE8265529913BD8001FA146 /* Debug */,
+				BFE8265629913BD8001FA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE8265729913BD8001FA146 /* Build configuration list for PBXNativeTarget "JKOShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE8265829913BD8001FA146 /* Debug */,
+				BFE8265929913BD8001FA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFE8263029913BD7001FA146 /* JKOShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFE8263129913BD7001FA146 /* JKOShop.xcdatamodel */,
+			);
+			currentVersion = BFE8263129913BD7001FA146 /* JKOShop.xcdatamodel */;
+			path = JKOShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFE8261C29913BD7001FA146 /* Project object */;
+}

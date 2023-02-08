@@ -6,6 +6,10 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
+import RxSwift
+import RxCocoa
 
 class ShoppingCartManager: NSObject{
     private static var inst : ShoppingCartManager?
@@ -27,9 +31,48 @@ class ShoppingCartManager: NSObject{
         inst = nil
     }
     
-    //新增商品到購物車
-    func addToCart(id:Int, count:Int){
+    var cartBadgeNumber = PublishRelay<Int>()
+    var cartList = PublishRelay<[CartModel]>()
+    
+    func fetchShoppingCartList(){
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
+        let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
+        
+        do{
+            let result = try moc.fetch(request)
+            print(result[0].count)
+            self.cartBadgeNumber.accept(result.count)
+            self.cartList.accept(result)
+        }catch{
+            print(error)
+        }
+    }
+    
+    //新增商品到購物車
+    func addToCart(id:String, count:Int){
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
+        request.predicate = NSPredicate(format: "id == %@", id)
+        
+        do{
+            let result = try moc.fetch(request)
+            
+            if result.count > 0{
+                result[0].count += Int64(count)
+            }else{
+                let newItem = NSEntityDescription.insertNewObject(forEntityName: "CartEntity", into: moc) as! CartModel
+                newItem.id = id
+                newItem.count = Int64(count)
+            }
+            
+            try moc.save()
+            
+            self.fetchShoppingCartList()
+        }catch{
+            print(error)
+        }
     }
     
     //修改商品數量

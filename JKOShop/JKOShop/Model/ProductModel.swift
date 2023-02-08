@@ -19,6 +19,7 @@ struct ProductModel: Codable{
     var tags: [String]?
     var imgLinkList: [String]?
     var category: [String]?
+    var createTime: Date?
     
 //    
 //    enum CodingKeys: CodingKey {

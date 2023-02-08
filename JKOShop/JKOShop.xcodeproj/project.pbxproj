@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		399DB2110DD40F489EFA5E05 /* libPods-JKOShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */; };
+		BF9EFB0329941CD900EF82B0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0229941CD900EF82B0 /* UIButton.swift */; };
+		BF9EFB0629941DB200EF82B0 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0529941DB200EF82B0 /* BasicButton.swift */; };
+		BF9EFB082994299600EF82B0 /* AddToCartDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */; };
 		BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262729913BD7001FA146 /* AppDelegate.swift */; };
 		BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262B29913BD7001FA146 /* ViewController.swift */; };
 		BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8262D29913BD7001FA146 /* Main.storyboard */; };
@@ -23,13 +25,15 @@
 		BFE8266B29914A5E001FA146 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8266A29914A5E001FA146 /* ProductManager.swift */; };
 		BFE8267129914E0B001FA146 /* TestProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = BFE8267029914E0B001FA146 /* TestProductData.json */; };
 		BFE826742991510A001FA146 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826732991510A001FA146 /* ProductModel.swift */; };
-		BFE82678299155FD001FA146 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82677299155FD001FA146 /* JSONDecoder.swift */; };
 		BFE8267A299159E7001FA146 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE82679299159E7001FA146 /* CartModel.swift */; };
 		BFE8267C29929BBF001FA146 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8267B29929BBF001FA146 /* ProductListVC.swift */; };
 		BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8267D29929C07001FA146 /* ProductListVM.swift */; };
 		BFE826812992A52B001FA146 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826802992A52B001FA146 /* UIViewController.swift */; };
 		BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826822992B041001FA146 /* ProductDetailVC.swift */; };
 		BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE826842992B35D001FA146 /* ProductDetailVM.swift */; };
+		BFE8268729940242001FA146 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8268629940242001FA146 /* JSONDecoder.swift */; };
+		BFE8268929940303001FA146 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8268829940303001FA146 /* DateFormatter.swift */; };
+		CFCF799C5A03C8296397FE75 /* Pods_JKOShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFE2478E3DFA553D528D6A /* Pods_JKOShop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,12 @@
 
 /* Begin PBXFileReference section */
 		0DDEB52471444468107268A0 /* Pods-JKOShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKOShop.release.xcconfig"; path = "Target Support Files/Pods-JKOShop/Pods-JKOShop.release.xcconfig"; sourceTree = "<group>"; };
-		49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKOShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB2F9E0622990FA42B9DA7 /* Pods-JKOShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKOShop.debug.xcconfig"; path = "Target Support Files/Pods-JKOShop/Pods-JKOShop.debug.xcconfig"; sourceTree = "<group>"; };
+		A2FFE2478E3DFA553D528D6A /* Pods_JKOShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKOShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9EFB002994101B00EF82B0 /* libiCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9EFB0229941CD900EF82B0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BF9EFB0529941DB200EF82B0 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartDialogue.swift; sourceTree = "<group>"; };
 		BFE8262429913BD7001FA146 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8262729913BD7001FA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE8262B29913BD7001FA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,13 +80,14 @@
 		BFE8266A29914A5E001FA146 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		BFE8267029914E0B001FA146 /* TestProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestProductData.json; sourceTree = "<group>"; };
 		BFE826732991510A001FA146 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
-		BFE82677299155FD001FA146 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		BFE82679299159E7001FA146 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		BFE8267B29929BBF001FA146 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		BFE8267D29929C07001FA146 /* ProductListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVM.swift; sourceTree = "<group>"; };
 		BFE826802992A52B001FA146 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		BFE826822992B041001FA146 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		BFE826842992B35D001FA146 /* ProductDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVM.swift; sourceTree = "<group>"; };
+		BFE8268629940242001FA146 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		BFE8268829940303001FA146 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399DB2110DD40F489EFA5E05 /* libPods-JKOShop.a in Frameworks */,
+				CFCF799C5A03C8296397FE75 /* Pods_JKOShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +119,18 @@
 		6964E3D854A25A5FCC1618AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49D76CF1034F905C7074EBA5 /* libPods-JKOShop.a */,
+				BF9EFB002994101B00EF82B0 /* libiCarousel.a */,
+				A2FFE2478E3DFA553D528D6A /* Pods_JKOShop.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF9EFB0429941DA400EF82B0 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EFB0529941DB200EF82B0 /* BasicButton.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		BFE8261B29913BD7001FA146 = {
@@ -140,6 +158,7 @@
 		BFE8262629913BD7001FA146 /* JKOShop */ = {
 			isa = PBXGroup;
 			children = (
+				BF9EFB0429941DA400EF82B0 /* CustomUI */,
 				BFE8267F2992A51D001FA146 /* extensions */,
 				BFE82672299150FA001FA146 /* Model */,
 				BFE8265A29913CA1001FA146 /* XIB */,
@@ -153,11 +172,11 @@
 				BFE8265F2991435E001FA146 /* ShoppingCartManager.swift */,
 				BFE8266A29914A5E001FA146 /* ProductManager.swift */,
 				BFE8267029914E0B001FA146 /* TestProductData.json */,
-				BFE82677299155FD001FA146 /* JSONDecoder.swift */,
 				BFE8267B29929BBF001FA146 /* ProductListVC.swift */,
 				BFE8267D29929C07001FA146 /* ProductListVM.swift */,
 				BFE826822992B041001FA146 /* ProductDetailVC.swift */,
 				BFE826842992B35D001FA146 /* ProductDetailVM.swift */,
+				BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */,
 			);
 			path = JKOShop;
 			sourceTree = "<group>";
@@ -209,6 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				BFE826802992A52B001FA146 /* UIViewController.swift */,
+				BFE8268629940242001FA146 /* JSONDecoder.swift */,
+				BFE8268829940303001FA146 /* DateFormatter.swift */,
+				BF9EFB0229941CD900EF82B0 /* UIButton.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -233,6 +255,7 @@
 				BFE8262029913BD7001FA146 /* Sources */,
 				BFE8262129913BD7001FA146 /* Frameworks */,
 				BFE8262229913BD7001FA146 /* Resources */,
+				6F5376A88E5D19C1E36BAA77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +397,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6F5376A88E5D19C1E36BAA77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKOShop/Pods-JKOShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKOShop/Pods-JKOShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKOShop/Pods-JKOShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -381,18 +421,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE8268929940303001FA146 /* DateFormatter.swift in Sources */,
 				BFE8267C29929BBF001FA146 /* ProductListVC.swift in Sources */,
 				BFE8265E29914134001FA146 /* ItemListCell.swift in Sources */,
+				BF9EFB0329941CD900EF82B0 /* UIButton.swift in Sources */,
 				BFE826812992A52B001FA146 /* UIViewController.swift in Sources */,
 				BFE8266B29914A5E001FA146 /* ProductManager.swift in Sources */,
+				BF9EFB082994299600EF82B0 /* AddToCartDialogue.swift in Sources */,
 				BFE826602991435E001FA146 /* ShoppingCartManager.swift in Sources */,
-				BFE82678299155FD001FA146 /* JSONDecoder.swift in Sources */,
 				BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */,
 				BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */,
 				BFE8267A299159E7001FA146 /* CartModel.swift in Sources */,
 				BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */,
 				BFE826742991510A001FA146 /* ProductModel.swift in Sources */,
+				BF9EFB0629941DB200EF82B0 /* BasicButton.swift in Sources */,
 				BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */,
+				BFE8268729940242001FA146 /* JSONDecoder.swift in Sources */,
 				BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */,
 				BFE8263229913BD7001FA146 /* JKOShop.xcdatamodeld in Sources */,
 			);

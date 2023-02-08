@@ -22,6 +22,7 @@ class ProductListVM : NSObject{
             do{
                 let data = try Data(contentsOf: productData)
                 let decoder = JSONDecoder()
+                decoder.dateConvert()
                 
                 let result = try decoder.decode([ProductModel].self, from: data)
 //                print(result)

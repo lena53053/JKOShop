@@ -10,6 +10,8 @@ import RxSwift
 import RxCocoa
 
 class ProductDetailVM : NSObject{
+    var imageScrollPause = false
+    
     var id:String?
     var model = BehaviorRelay<ProductModel?>(value: nil)
     

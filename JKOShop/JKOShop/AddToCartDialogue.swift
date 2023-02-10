@@ -10,4 +10,13 @@ import UIKit
 
 class AddToCartDialogue:UIViewController{
     
+    var vm:ProductDetailVM?
+    
+    @IBAction func addToCartBtn(_ sender: BasicButton) {
+        if let id = self.vm?.id{
+            ShoppingCartManager.shared().addToCart(id: id,
+                                                   count: self.vm!.count,
+                                                   unitPrice: self.vm!.unitPrice)
+        }
+    }
 }

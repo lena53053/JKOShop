@@ -10,6 +10,10 @@
 		BF9EFB0329941CD900EF82B0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0229941CD900EF82B0 /* UIButton.swift */; };
 		BF9EFB0629941DB200EF82B0 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0529941DB200EF82B0 /* BasicButton.swift */; };
 		BF9EFB082994299600EF82B0 /* AddToCartDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */; };
+		BF9EFB0A2996B62B00EF82B0 /* CartListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9EFB092996B62B00EF82B0 /* CartListCell.xib */; };
+		BF9EFB0C2996B63700EF82B0 /* CartListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0B2996B63700EF82B0 /* CartListCell.swift */; };
+		BF9EFB0E2996B95A00EF82B0 /* CartListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */; };
+		BF9EFB102996B96900EF82B0 /* CartListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */; };
 		BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262729913BD7001FA146 /* AppDelegate.swift */; };
 		BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262B29913BD7001FA146 /* ViewController.swift */; };
 		BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8262D29913BD7001FA146 /* Main.storyboard */; };
@@ -61,6 +65,10 @@
 		BF9EFB0229941CD900EF82B0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		BF9EFB0529941DB200EF82B0 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartDialogue.swift; sourceTree = "<group>"; };
+		BF9EFB092996B62B00EF82B0 /* CartListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartListCell.xib; sourceTree = "<group>"; };
+		BF9EFB0B2996B63700EF82B0 /* CartListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListCell.swift; sourceTree = "<group>"; };
+		BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListVC.swift; sourceTree = "<group>"; };
+		BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListVM.swift; sourceTree = "<group>"; };
 		BFE8262429913BD7001FA146 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8262729913BD7001FA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE8262B29913BD7001FA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +185,8 @@
 				BFE826822992B041001FA146 /* ProductDetailVC.swift */,
 				BFE826842992B35D001FA146 /* ProductDetailVM.swift */,
 				BF9EFB072994299600EF82B0 /* AddToCartDialogue.swift */,
+				BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */,
+				BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */,
 			);
 			path = JKOShop;
 			sourceTree = "<group>";
@@ -203,6 +213,8 @@
 			children = (
 				BFE8265B29913CC8001FA146 /* ItemListCell.xib */,
 				BFE8265D29914134001FA146 /* ItemListCell.swift */,
+				BF9EFB092996B62B00EF82B0 /* CartListCell.xib */,
+				BF9EFB0B2996B63700EF82B0 /* CartListCell.swift */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -351,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE8267129914E0B001FA146 /* TestProductData.json in Resources */,
+				BF9EFB0A2996B62B00EF82B0 /* CartListCell.xib in Resources */,
 				BFE8265C29913CC8001FA146 /* ItemListCell.xib in Resources */,
 				BFE8263729913BD8001FA146 /* LaunchScreen.storyboard in Resources */,
 				BFE8263429913BD8001FA146 /* Assets.xcassets in Resources */,
@@ -433,11 +446,14 @@
 				BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */,
 				BFE8267A299159E7001FA146 /* CartModel.swift in Sources */,
 				BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */,
+				BF9EFB102996B96900EF82B0 /* CartListVM.swift in Sources */,
 				BFE826742991510A001FA146 /* ProductModel.swift in Sources */,
 				BF9EFB0629941DB200EF82B0 /* BasicButton.swift in Sources */,
+				BF9EFB0C2996B63700EF82B0 /* CartListCell.swift in Sources */,
 				BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */,
 				BFE8268729940242001FA146 /* JSONDecoder.swift in Sources */,
 				BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */,
+				BF9EFB0E2996B95A00EF82B0 /* CartListVC.swift in Sources */,
 				BFE8263229913BD7001FA146 /* JKOShop.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

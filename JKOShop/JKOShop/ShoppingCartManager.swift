@@ -25,14 +25,16 @@ class ShoppingCartManager: NSObject{
     
     override init() {
         super.init()
+        
+        self.fetchShoppingCartList()
     }
     
     class func destroy(){
         inst = nil
     }
     
-    var cartBadgeNumber = PublishRelay<Int>()
-    var cartList = PublishRelay<[CartModel]>()
+    var cartBadgeNumber = BehaviorRelay<Int>(value: 0)
+    var cartList = BehaviorRelay<[CartModel]?>(value: nil)
     
     func fetchShoppingCartList(){
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -50,7 +52,7 @@ class ShoppingCartManager: NSObject{
     }
     
     //新增商品到購物車
-    func addToCart(id:String, count:Int){
+    func addToCart(id:String, count:Int, unitPrice: Int){
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
@@ -65,6 +67,7 @@ class ShoppingCartManager: NSObject{
                 let newItem = NSEntityDescription.insertNewObject(forEntityName: "CartEntity", into: moc) as! CartModel
                 newItem.id = id
                 newItem.count = Int64(count)
+                newItem.unitPrice = Int64(unitPrice)
             }
             
             try moc.save()

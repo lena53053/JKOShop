@@ -277,6 +277,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="加入購物車" image="cart" catalog="system"/>
+                                        <connections>
+                                            <action selector="addToCartBtn:" destination="8l1-E5-MUc" eventType="touchUpInside" id="RZg-Su-0gz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-gI-LG7">
                                         <rect key="frame" x="193" y="61" width="22" height="22"/>
@@ -328,7 +331,7 @@
         <!--購物車-->
         <scene sceneID="FlN-Bm-uOh">
             <objects>
-                <viewController title="購物車" id="hB3-fu-sh7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cartListVC" title="購物車" id="hB3-fu-sh7" customClass="CartListVC" customModule="JKOShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atf-UX-Y9G">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,6 +352,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="購物車" image="cart" catalog="system" id="lp0-rO-GqN"/>
                     <navigationItem key="navigationItem" id="w95-GJ-xNs"/>
+                    <connections>
+                        <outlet property="tableView" destination="vYF-F6-Con" id="Xf0-Z3-2YI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFi-hJ-4iT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

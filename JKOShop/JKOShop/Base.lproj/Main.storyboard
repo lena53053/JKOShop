@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -252,7 +253,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1am-ib-tE6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1am-ib-tE6" customClass="BasicButton" customModule="JKOShop" customModuleProvider="target">
                                         <rect key="frame" x="97" y="61" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1am-ib-tE6" secondAttribute="height" id="ZY6-La-8AZ"/>
@@ -262,6 +263,9 @@
                                         <state key="normal" image="minus.circle.fill" catalog="system">
                                             <color key="titleColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectMinusAmount:" destination="8l1-E5-MUc" eventType="touchUpInside" id="WLq-9g-wu7"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY6-RM-VLc">
                                         <rect key="frame" x="135" y="61.666666666666629" width="42" height="21"/>
@@ -281,7 +285,7 @@
                                             <action selector="addToCartBtn:" destination="8l1-E5-MUc" eventType="touchUpInside" id="RZg-Su-0gz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-gI-LG7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-gI-LG7" customClass="BasicButton" customModule="JKOShop" customModuleProvider="target">
                                         <rect key="frame" x="193" y="61" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Md1-gI-LG7" secondAttribute="height" id="bYW-3w-dZs"/>
@@ -289,6 +293,9 @@
                                         <color key="tintColor" red="1" green="0.4941176471" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="plus.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="selectAddAmount:" destination="8l1-E5-MUc" eventType="touchUpInside" id="cmj-2y-s0Q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -323,6 +330,13 @@
                             <constraint firstItem="MAa-dR-4eK" firstAttribute="bottom" secondItem="f6z-vT-6Uu" secondAttribute="bottom" constant="24" id="s9b-To-dvs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addToCartBtn" destination="f6z-vT-6Uu" id="JED-KG-YG1"/>
+                        <outlet property="bgView" destination="iIf-f8-8Nv" id="TCE-pJ-jcr"/>
+                        <outlet property="countLabel" destination="pY6-RM-VLc" id="9Za-RT-awR"/>
+                        <outlet property="priceLabel" destination="wtO-3T-aDb" id="Gkz-U3-2NE"/>
+                        <outlet property="stockLabel" destination="KFZ-aS-hhr" id="L5O-yG-3EK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SW-le-XIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,28 +351,72 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vYF-F6-Con">
-                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="605"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWa-c1-92D">
+                                <rect key="frame" x="0.0" y="697" width="390" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S8-CW-Nvy" customClass="BasicButton" customModule="JKOShop" customModuleProvider="target">
+                                        <rect key="frame" x="280.66666666666669" y="8" width="93.333333333333314" height="48"/>
+                                        <color key="backgroundColor" name="pink"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Kfh-UZ-Mdd"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="前往結帳"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="前往結帳"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結帳總金額:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vit-lA-baf">
+                                        <rect key="frame" x="16" y="40.333333333333371" width="70.333333333333329" height="15.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nml-ru-Co2">
+                                        <rect key="frame" x="94.333333333333329" y="35" width="23" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vit-lA-baf" firstAttribute="bottom" secondItem="9S8-CW-Nvy" secondAttribute="bottom" id="2n4-Me-dck"/>
+                                    <constraint firstItem="9S8-CW-Nvy" firstAttribute="top" secondItem="rWa-c1-92D" secondAttribute="top" constant="8" id="Ftr-hV-i7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="9S8-CW-Nvy" secondAttribute="bottom" constant="8" id="Kbd-Gq-lAF"/>
+                                    <constraint firstItem="vit-lA-baf" firstAttribute="leading" secondItem="rWa-c1-92D" secondAttribute="leading" constant="16" id="ZHw-JK-equ"/>
+                                    <constraint firstItem="nml-ru-Co2" firstAttribute="bottom" secondItem="vit-lA-baf" secondAttribute="bottom" id="fY3-QI-Jyj"/>
+                                    <constraint firstAttribute="trailing" secondItem="9S8-CW-Nvy" secondAttribute="trailing" constant="16" id="oKb-vt-Jod"/>
+                                    <constraint firstItem="9S8-CW-Nvy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nml-ru-Co2" secondAttribute="trailing" constant="16" id="rf7-tW-dBx"/>
+                                    <constraint firstItem="nml-ru-Co2" firstAttribute="leading" secondItem="vit-lA-baf" secondAttribute="trailing" constant="8" id="zOq-Sg-lcb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sTV-OE-V3Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vYF-F6-Con" firstAttribute="leading" secondItem="sTV-OE-V3Z" secondAttribute="leading" id="1KA-I9-okc"/>
-                            <constraint firstItem="sTV-OE-V3Z" firstAttribute="bottom" secondItem="vYF-F6-Con" secondAttribute="bottom" id="DbB-yY-RwA"/>
+                            <constraint firstItem="rWa-c1-92D" firstAttribute="bottom" secondItem="sTV-OE-V3Z" secondAttribute="bottom" id="JGl-iH-B12"/>
+                            <constraint firstItem="sTV-OE-V3Z" firstAttribute="trailing" secondItem="rWa-c1-92D" secondAttribute="trailing" id="d81-VU-Fas"/>
                             <constraint firstItem="sTV-OE-V3Z" firstAttribute="trailing" secondItem="vYF-F6-Con" secondAttribute="trailing" id="i9O-cm-nDj"/>
                             <constraint firstItem="vYF-F6-Con" firstAttribute="top" secondItem="sTV-OE-V3Z" secondAttribute="top" id="nzW-uE-rYz"/>
+                            <constraint firstItem="rWa-c1-92D" firstAttribute="top" secondItem="vYF-F6-Con" secondAttribute="bottom" constant="1" id="o3Q-NW-hkA"/>
+                            <constraint firstItem="rWa-c1-92D" firstAttribute="leading" secondItem="sTV-OE-V3Z" secondAttribute="leading" id="ooS-8e-69u"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="購物車" image="cart" catalog="system" id="lp0-rO-GqN"/>
                     <navigationItem key="navigationItem" id="w95-GJ-xNs"/>
                     <connections>
+                        <outlet property="paymentBgView" destination="rWa-c1-92D" id="5zD-nZ-Yhf"/>
+                        <outlet property="proceedToPaymentBtn" destination="9S8-CW-Nvy" id="sV0-so-WWO"/>
                         <outlet property="tableView" destination="vYF-F6-Con" id="Xf0-Z3-2YI"/>
+                        <outlet property="totalPriceLabel" destination="nml-ru-Co2" id="2gN-zO-56e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFi-hJ-4iT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1237" y="88"/>
+            <point key="canvasLocation" x="-1238.4615384615383" y="87.440758293838854"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IXy-Eh-3dD">
@@ -428,6 +486,9 @@
         <image name="minus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="pink">
+            <color red="1" green="0.49411764705882355" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -26,7 +26,7 @@ class ShoppingCartManager: NSObject{
     override init() {
         super.init()
         
-        self.fetchShoppingCartList()
+        self.fetchCartList()
     }
     
     class func destroy(){
@@ -35,24 +35,31 @@ class ShoppingCartManager: NSObject{
     
     var cartBadgeNumber = BehaviorRelay<Int>(value: 0)
     var cartList = BehaviorRelay<[CartModel]?>(value: nil)
+    var selectedItemList = BehaviorRelay<[String]>(value: [])
     
-    func fetchShoppingCartList(){
+    func fetchCartList(){
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
         
         do{
             let result = try moc.fetch(request)
-            print(result[0].count)
+            print("Cart Item Count: \(result.count)")
             self.cartBadgeNumber.accept(result.count)
             self.cartList.accept(result)
+            
+            if selectedItemList.value.count == 0{
+                let idList = result.compactMap{ $0.id }
+                self.selectedItemList.accept(idList)
+            }
+            
         }catch{
             print(error)
         }
     }
     
     //新增商品到購物車
-    func addToCart(id:String, count:Int, unitPrice: Int){
+    func addToCart(id: String, count:Int, unitPrice: Int){
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
@@ -68,24 +75,64 @@ class ShoppingCartManager: NSObject{
                 newItem.id = id
                 newItem.count = Int64(count)
                 newItem.unitPrice = Int64(unitPrice)
+                
+                self.selectedItemList.accept(self.selectedItemList.value + [id])
             }
             
             try moc.save()
             
-            self.fetchShoppingCartList()
+            self.fetchCartList()
         }catch{
             print(error)
         }
     }
     
     //修改商品數量
-    func editItemCount(id:Int, count:Int){
-        //不在需求範圍有空再做
+    func editItemCount(id:String, count:Int){
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
+        request.predicate = NSPredicate(format: "id == %@", id)
+        
+        do{
+            let result = try moc.fetch(request)
+            
+            if result.count > 0{
+                if count == 0{
+                    moc.delete(result[0])
+                }else{
+                    result[0].count = Int64(count)
+                }
+            
+                try moc.save()
+                
+                self.fetchCartList()
+            }
+        }catch{
+            print(error)
+        }
     }
     
     //刪除購物車中的商品
-    func deleteFromCart(id:Int){
+    func deleteFromCart(id:String){
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
+        let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
+        request.predicate = NSPredicate(format: "id == %@", id)
+        
+        do{
+            let result = try moc.fetch(request)
+            
+            if result.count > 0{
+                moc.delete(result[0])
+                
+                try moc.save()
+                
+                self.fetchCartList()
+            }
+        }catch{
+            print(error)
+        }
     }
     
     //新增到我的最愛

@@ -69,7 +69,7 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "addToCartDialogue") as! AddToCartDialogue
                 vc.modalPresentationStyle = .overFullScreen
                 vc.vm = self.vm
-                self.present(vc, animated: true, completion: nil)
+                self.present(vc, animated: false, completion: nil)
 //                if let product = self.vm.model.value, let id = product.id{
 //                    ShoppingCartManager.shared().addToCart(id: id, count: 2)
 //                }

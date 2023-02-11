@@ -23,6 +23,7 @@ class CartListVM : NSObject{
     
     var totalPrice = BehaviorRelay<Int>(value: 0)
     
+    var payment_vm = PaymentVM()
     var disposeBag = DisposeBag()
     
     func initializeData(){
@@ -30,11 +31,6 @@ class CartListVM : NSObject{
             .subscribe(onNext: { list in
                 if let productList = ProductManager.shared().productList, list != nil{
                     self.cartUnitPriceList = list!
-                    
-                    if self.cartItemList.value.count == 0, list!.count != 0{
-                        let idList = list!.compactMap{ $0.id }
-                        self.selectedItemList.accept(idList)
-                    }
                     
                     let cartProductList = productList.filter{ cart in list!.contains(where: {$0.id == cart.id })}
                     
@@ -44,13 +40,20 @@ class CartListVM : NSObject{
                 }
             }).disposed(by: self.disposeBag)
         
-        self.selectedItemList
+        ShoppingCartManager.shared().selectedItemList
             .subscribe(onNext: { list in
-                let calTotal = self.cartUnitPriceList.filter{ data in list.contains(where: { data.id == $0 })}.reduce(0, {
-                    return $0 + $1.unitPrice*$1.count
-                })
-                
-                self.totalPrice.accept(Int(calTotal))
+                self.selectedItemList.accept(list)
+            }).disposed(by: self.disposeBag)
+        
+        self.cartItemList
+            .subscribe(onNext: { _ in
+                self.refreshTotalPrice()
+            }).disposed(by: disposeBag)
+        
+        self.selectedItemList
+            .subscribe(onNext: { _ in
+                self.refreshTotalPrice()
+    
         }).disposed(by: disposeBag)
     }
     
@@ -63,7 +66,12 @@ class CartListVM : NSObject{
             selectedList.append(id)
             self.selectedItemList.accept(selectedList)
         }
-        
     }
     
+    func refreshTotalPrice(){
+        let list = selectedItemList.value
+        let calTotal = self.payment_vm.calTotalPrice(self.cartUnitPriceList, selectedItemList: list)
+    
+        self.totalPrice.accept(calTotal)
+    }
 }

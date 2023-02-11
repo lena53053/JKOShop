@@ -29,11 +29,15 @@ class BasicButton : UIButton{
     
     func setStyle(_ style:BasicButtonStyle){
         self.style = style
+        self.layer.borderWidth = 24
         
+        self.setEnabledStyle(style)
+    }
+    
+    func setEnabledStyle(_ style:BasicButtonStyle){
         switch style {
         case .basic:
-            self.layer.borderWidth = 24
-            self.backgroundColor = UIColor(named: "FF7E79")
+            self.backgroundColor = UIColor(named: "pink")
             self.setTitleColor(UIColor.white, for: .normal)
             self.setTitleColor(UIColor.white, for: .selected)
         }
@@ -53,7 +57,7 @@ class BasicButton : UIButton{
             super.isEnabled = isEnabled
             
             if isEnabled{
-                self.setStyle(self.style)
+                self.setEnabledStyle(self.style)
             }else{
                 self.setDisableStyle(self.style)
             }

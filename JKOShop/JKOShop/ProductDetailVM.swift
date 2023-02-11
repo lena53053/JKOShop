@@ -27,6 +27,7 @@ class ProductDetailVM : NSObject{
                 self.model.accept(product)
             }
         }
-    
     }
+    
+    
 }

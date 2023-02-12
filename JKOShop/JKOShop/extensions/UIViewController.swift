@@ -13,7 +13,7 @@ extension UIViewController{
         if #available(iOS 15.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithTransparentBackground()
-            appearance.backgroundColor = UIColor.red
+            appearance.backgroundColor = UIColor(named: "CC0000")
             appearance.titleTextAttributes = [
                 NSAttributedString.Key.foregroundColor : UIColor.white
             ]
@@ -35,12 +35,24 @@ extension UIViewController{
                                    style: .plain,
                                    target: self,
                                    action: #selector(UIViewController.leftBarButtonItemAction))
-
         self.navigationItem.setLeftBarButton(back, animated: false)
         
     }
     
     @objc func leftBarButtonItemAction() {
         navigationController?.popViewController(animated: true)
+    }
+    
+    func setNavigationRightCloseBarItem(){
+        let close = UIBarButtonItem(image: UIImage(systemName: "xmark")?.withRenderingMode(.alwaysTemplate),
+                                    style: .plain,
+                                    target: self,
+                                    action: #selector(UIViewController.rightCloseBarButtonItemAction))
+        close.tintColor = .white
+        self.navigationItem.setRightBarButton(close, animated: true)
+    }
+    
+    @objc func rightCloseBarButtonItemAction(){
+        self.dismiss(animated: true, completion: nil)
     }
 }

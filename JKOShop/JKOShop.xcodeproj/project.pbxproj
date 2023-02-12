@@ -15,6 +15,15 @@
 		BF9EFB0E2996B95A00EF82B0 /* CartListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */; };
 		BF9EFB102996B96900EF82B0 /* CartListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */; };
 		BF9EFB122998150C00EF82B0 /* PaymentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB112998150C00EF82B0 /* PaymentVM.swift */; };
+		BF9EFB142998B8A400EF82B0 /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB132998B8A400EF82B0 /* OrderHistoryVC.swift */; };
+		BF9EFB162998B8AC00EF82B0 /* OrderHistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB152998B8AC00EF82B0 /* OrderHistoryVM.swift */; };
+		BF9EFB182998B94C00EF82B0 /* OrderHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB172998B94C00EF82B0 /* OrderHistoryModel.swift */; };
+		BF9EFB1A2998BB3C00EF82B0 /* OrderHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9EFB192998BB3C00EF82B0 /* OrderHistoryCell.xib */; };
+		BF9EFB1C2998BBF000EF82B0 /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB1B2998BBF000EF82B0 /* OrderHistoryCell.swift */; };
+		BF9EFB1E2998BD2C00EF82B0 /* ConfirmPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB1D2998BD2C00EF82B0 /* ConfirmPaymentVC.swift */; };
+		BF9EFB202998C01A00EF82B0 /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB1F2998C01A00EF82B0 /* PaymentManager.swift */; };
+		BF9EFB222998C4D700EF82B0 /* ConfirmOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9EFB212998C4D700EF82B0 /* ConfirmOrderCell.xib */; };
+		BF9EFB242998C4E100EF82B0 /* ConfirmOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EFB232998C4E100EF82B0 /* ConfirmOrderCell.swift */; };
 		BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262729913BD7001FA146 /* AppDelegate.swift */; };
 		BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8262B29913BD7001FA146 /* ViewController.swift */; };
 		BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE8262D29913BD7001FA146 /* Main.storyboard */; };
@@ -71,6 +80,15 @@
 		BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListVC.swift; sourceTree = "<group>"; };
 		BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListVM.swift; sourceTree = "<group>"; };
 		BF9EFB112998150C00EF82B0 /* PaymentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVM.swift; sourceTree = "<group>"; };
+		BF9EFB132998B8A400EF82B0 /* OrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		BF9EFB152998B8AC00EF82B0 /* OrderHistoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVM.swift; sourceTree = "<group>"; };
+		BF9EFB172998B94C00EF82B0 /* OrderHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryModel.swift; sourceTree = "<group>"; };
+		BF9EFB192998BB3C00EF82B0 /* OrderHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHistoryCell.xib; sourceTree = "<group>"; };
+		BF9EFB1B2998BBF000EF82B0 /* OrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
+		BF9EFB1D2998BD2C00EF82B0 /* ConfirmPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentVC.swift; sourceTree = "<group>"; };
+		BF9EFB1F2998C01A00EF82B0 /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
+		BF9EFB212998C4D700EF82B0 /* ConfirmOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmOrderCell.xib; sourceTree = "<group>"; };
+		BF9EFB232998C4E100EF82B0 /* ConfirmOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderCell.swift; sourceTree = "<group>"; };
 		BFE8262429913BD7001FA146 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8262729913BD7001FA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE8262B29913BD7001FA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +208,10 @@
 				BF9EFB0D2996B95A00EF82B0 /* CartListVC.swift */,
 				BF9EFB0F2996B96900EF82B0 /* CartListVM.swift */,
 				BF9EFB112998150C00EF82B0 /* PaymentVM.swift */,
+				BF9EFB132998B8A400EF82B0 /* OrderHistoryVC.swift */,
+				BF9EFB152998B8AC00EF82B0 /* OrderHistoryVM.swift */,
+				BF9EFB1D2998BD2C00EF82B0 /* ConfirmPaymentVC.swift */,
+				BF9EFB1F2998C01A00EF82B0 /* PaymentManager.swift */,
 			);
 			path = JKOShop;
 			sourceTree = "<group>";
@@ -218,6 +240,10 @@
 				BFE8265D29914134001FA146 /* ItemListCell.swift */,
 				BF9EFB092996B62B00EF82B0 /* CartListCell.xib */,
 				BF9EFB0B2996B63700EF82B0 /* CartListCell.swift */,
+				BF9EFB192998BB3C00EF82B0 /* OrderHistoryCell.xib */,
+				BF9EFB1B2998BBF000EF82B0 /* OrderHistoryCell.swift */,
+				BF9EFB212998C4D700EF82B0 /* ConfirmOrderCell.xib */,
+				BF9EFB232998C4E100EF82B0 /* ConfirmOrderCell.swift */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -235,6 +261,7 @@
 			children = (
 				BFE826732991510A001FA146 /* ProductModel.swift */,
 				BFE82679299159E7001FA146 /* CartModel.swift */,
+				BF9EFB172998B94C00EF82B0 /* OrderHistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,9 +395,11 @@
 				BFE8267129914E0B001FA146 /* TestProductData.json in Resources */,
 				BF9EFB0A2996B62B00EF82B0 /* CartListCell.xib in Resources */,
 				BFE8265C29913CC8001FA146 /* ItemListCell.xib in Resources */,
+				BF9EFB1A2998BB3C00EF82B0 /* OrderHistoryCell.xib in Resources */,
 				BFE8263729913BD8001FA146 /* LaunchScreen.storyboard in Resources */,
 				BFE8263429913BD8001FA146 /* Assets.xcassets in Resources */,
 				BFE8262F29913BD7001FA146 /* Main.storyboard in Resources */,
+				BF9EFB222998C4D700EF82B0 /* ConfirmOrderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9EFB162998B8AC00EF82B0 /* OrderHistoryVM.swift in Sources */,
 				BFE8268929940303001FA146 /* DateFormatter.swift in Sources */,
 				BFE8267C29929BBF001FA146 /* ProductListVC.swift in Sources */,
 				BFE8265E29914134001FA146 /* ItemListCell.swift in Sources */,
@@ -447,16 +477,22 @@
 				BF9EFB082994299600EF82B0 /* AddToCartDialogue.swift in Sources */,
 				BFE826602991435E001FA146 /* ShoppingCartManager.swift in Sources */,
 				BFE8262C29913BD7001FA146 /* ViewController.swift in Sources */,
+				BF9EFB1E2998BD2C00EF82B0 /* ConfirmPaymentVC.swift in Sources */,
 				BFE8267E29929C07001FA146 /* ProductListVM.swift in Sources */,
 				BFE8267A299159E7001FA146 /* CartModel.swift in Sources */,
 				BFE8262829913BD7001FA146 /* AppDelegate.swift in Sources */,
 				BF9EFB102996B96900EF82B0 /* CartListVM.swift in Sources */,
+				BF9EFB202998C01A00EF82B0 /* PaymentManager.swift in Sources */,
+				BF9EFB1C2998BBF000EF82B0 /* OrderHistoryCell.swift in Sources */,
 				BFE826742991510A001FA146 /* ProductModel.swift in Sources */,
 				BF9EFB0629941DB200EF82B0 /* BasicButton.swift in Sources */,
 				BF9EFB0C2996B63700EF82B0 /* CartListCell.swift in Sources */,
+				BF9EFB182998B94C00EF82B0 /* OrderHistoryModel.swift in Sources */,
 				BFE826852992B35D001FA146 /* ProductDetailVM.swift in Sources */,
 				BFE8268729940242001FA146 /* JSONDecoder.swift in Sources */,
 				BFE826832992B041001FA146 /* ProductDetailVC.swift in Sources */,
+				BF9EFB242998C4E100EF82B0 /* ConfirmOrderCell.swift in Sources */,
+				BF9EFB142998B8A400EF82B0 /* OrderHistoryVC.swift in Sources */,
 				BF9EFB0E2996B95A00EF82B0 /* CartListVC.swift in Sources */,
 				BFE8263229913BD7001FA146 /* JKOShop.xcdatamodeld in Sources */,
 			);

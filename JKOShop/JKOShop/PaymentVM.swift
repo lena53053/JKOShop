@@ -9,6 +9,18 @@ import Foundation
 
 class PaymentVM: NSObject{
     
+    var payingOrderList:[CartItem]? = nil{
+        didSet{
+            if let list = payingOrderList{
+                self.totalPrice = self.calTotalPrice(list)
+                
+            }
+        }
+    }
+    var selectedItemList:[String]?
+    
+    var totalPrice:Int = 0
+    
     func calUnitNetPrice(count:Int, unitPrice:Int) -> Int{
         return count*unitPrice
     }
@@ -19,5 +31,9 @@ class PaymentVM: NSObject{
         })
         
         return Int(calTotal)
+    }
+    
+    func calTotalPrice(_ orderList:[CartItem]) -> Int{
+        return orderList.reduce(0, {$0 + ($1.product?.price ?? 0)*$1.count})
     }
 }

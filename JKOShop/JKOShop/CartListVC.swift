@@ -22,10 +22,7 @@ class CartListVC : UIViewController, UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.initializeUI()
-        
-        self.title = "購物車"
         
         let nib = UINib(nibName: "CartListCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "cartListCell")
@@ -74,7 +71,16 @@ class CartListVC : UIViewController, UITableViewDelegate{
                 }
             }.disposed(by: disposeBag)
         
-        
+        self.proceedToPaymentBtn.rx.tap
+            .subscribe(onNext: {
+                 
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "confirmPaymentVC") as! ConfirmPaymentVC
+                vc.vm.selectedItemList = self.vm.selectedItemList.value
+                vc.vm.payingOrderList = self.vm.getPayingItemList()
+                vc.modalPresentationStyle = .overCurrentContext
+                let nav = UINavigationController(rootViewController: vc)
+                self.present(nav, animated: true)
+            }).disposed(by: disposeBag)
         
         self.vm.totalPrice
             .observe(on: MainScheduler.instance)
@@ -87,12 +93,13 @@ class CartListVC : UIViewController, UITableViewDelegate{
     }
     
     func initializeUI(){
-        self.proceedToPaymentBtn.layer.cornerRadius = 8
+        self.setupNavigationBar()
+        self.title = "購物車"
         
-        paymentBgView.layer.shadowColor = UIColor.black.cgColor
-        paymentBgView.layer.shadowOffset = CGSize(width: 0, height: 3)
-        paymentBgView.layer.shadowOpacity = 0.1
-        paymentBgView.layer.shadowOffset = .zero
-        paymentBgView.layer.shadowRadius = 6
+        self.paymentBgView.layer.shadowColor = UIColor.black.cgColor
+        self.paymentBgView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.paymentBgView.layer.shadowOpacity = 0.1
+        self.paymentBgView.layer.shadowOffset = .zero
+        self.paymentBgView.layer.shadowRadius = 6
     }
 }

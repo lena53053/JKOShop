@@ -20,6 +20,9 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
     @IBOutlet weak var stockLabel: UILabel!
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var addToCartBtn: BasicButton!
+    @IBOutlet weak var proceedToPaymentBtn: BasicButton!
+    
+    @IBOutlet weak var paymentBgView: UIView!
     
     @IBOutlet weak var pageCounter: UIButton!
     
@@ -34,8 +37,6 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
         self.initializeUI()
         self.vm.initializeData()
 
-        
-        
         self.vm.model
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { product in
@@ -64,26 +65,27 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
             }).disposed(by: disposeBag)
         
         self.addToCartBtn.rx.tap
-//            .observe(on: MainScheduler.instance)
             .subscribe(onNext:{
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "addToCartDialogue") as! AddToCartDialogue
                 vc.modalPresentationStyle = .overFullScreen
                 vc.vm = self.vm
                 self.present(vc, animated: false, completion: nil)
-//                if let product = self.vm.model.value, let id = product.id{
-//                    ShoppingCartManager.shared().addToCart(id: id, count: 2)
-//                }
             }).disposed(by: disposeBag)
     }
     
     func initializeUI(){
         self.setNavigationLeftBarItem()
         self.pageCounter.layer.cornerRadius = 5
-        self.addToCartBtn.layer.cornerRadius = 24
         
         self.imageViewer.delegate = self
         self.imageViewer.dataSource = self
         self.imageViewer.isPagingEnabled = true
+        
+        paymentBgView.layer.shadowColor = UIColor.black.cgColor
+        paymentBgView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        paymentBgView.layer.shadowOpacity = 0.1
+        paymentBgView.layer.shadowOffset = .zero
+        paymentBgView.layer.shadowRadius = 6
     }
     
     override func viewWillAppear(_ animated: Bool) {

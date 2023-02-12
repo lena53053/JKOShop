@@ -41,6 +41,13 @@ class ProductListVC: UIViewController, UITableViewDelegate{
                 cell.promotionLabel.text = item.promoName
                 cell.titleLabel.text = item.name
                 cell.priceLabel.text = "$\(item.price ?? 0)"
+                
+                cell.addToCartBtn.rx.tap
+                    .subscribe(onNext: {
+                        if let id = item.id{
+                            ShoppingCartManager.shared().addToCart(id: id, count: 1, unitPrice: (item.price ?? 0))
+                        }
+                    }).disposed(by: cell.reuseableDisposeBag)
             }.disposed(by: disposeBag)
         
         self.tableView.rx.modelSelected(ProductModel.self)

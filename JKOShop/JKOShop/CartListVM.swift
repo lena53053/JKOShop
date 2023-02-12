@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-struct CartItem{
+struct CartItem: Codable{
     var product: ProductModel?
     var count: Int = 0
 }
@@ -73,5 +73,11 @@ class CartListVM : NSObject{
         let calTotal = self.payment_vm.calTotalPrice(self.cartUnitPriceList, selectedItemList: list)
     
         self.totalPrice.accept(calTotal)
+    }
+    
+    func getPayingItemList() -> [CartItem]{
+        let selectedList = self.selectedItemList.value
+        return self.cartItemList.value.filter{ item in selectedList.contains(where: { $0 == item.product?.id })
+        }
     }
 }

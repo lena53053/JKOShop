@@ -135,6 +135,27 @@ class ShoppingCartManager: NSObject{
         }
     }
     
+    func deleteFromtCart(idList:[String]){
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let request = NSFetchRequest<CartModel>(entityName: "CartEntity")
+        request.predicate = NSPredicate(format: "id IN %@", idList)
+        
+        do{
+            let result = try moc.fetch(request)
+            
+            for item in result{
+                moc.delete(item)
+            }
+            
+            try moc.save()
+                
+            self.fetchCartList()
+        }catch{
+            print(error)
+        }
+    }
+    
     //新增到我的最愛
     func addToFavorite(id:Int){
         //不在需求範圍有空再做

@@ -36,7 +36,6 @@ class AddToCartDialogue:UIViewController{
     
     func initializeUI(){
         self.bgView.layer.cornerRadius = 16
-        self.addToCartBtn.layer.cornerRadius = 8
         
         self.countLabel.text = "\(self.vm?.count ?? 0)"
         

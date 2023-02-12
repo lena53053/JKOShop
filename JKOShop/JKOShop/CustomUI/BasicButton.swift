@@ -18,18 +18,23 @@ class BasicButton : UIButton{
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-
-
+        
+        self.drawBtn()
     }
     
     required override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
+        self.drawBtn()
+    }
+    
+    func drawBtn(){
+        
+        self.layer.cornerRadius = 8
     }
     
     func setStyle(_ style:BasicButtonStyle){
         self.style = style
-        self.layer.borderWidth = 24
         
         self.setEnabledStyle(style)
     }
@@ -37,7 +42,7 @@ class BasicButton : UIButton{
     func setEnabledStyle(_ style:BasicButtonStyle){
         switch style {
         case .basic:
-            self.backgroundColor = UIColor(named: "pink")
+            self.backgroundColor = UIColor(named: "FF7E79")
             self.setTitleColor(UIColor.white, for: .normal)
             self.setTitleColor(UIColor.white, for: .selected)
         }

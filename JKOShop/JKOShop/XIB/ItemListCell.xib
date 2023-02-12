@@ -35,18 +35,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBc-AI-4Gt">
-                        <rect key="frame" x="357" y="151" width="25" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="25" id="6c8-ax-1ZI"/>
-                            <constraint firstAttribute="width" secondItem="EBc-AI-4Gt" secondAttribute="height" id="vT4-rI-TiL"/>
-                        </constraints>
-                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="heart" catalog="system">
-                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
-                        </state>
-                    </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3JG-qS-FBA">
                         <rect key="frame" x="16" y="16" width="120" height="90"/>
                         <color key="tintColor" systemColor="placeholderTextColor"/>
@@ -55,41 +43,59 @@
                             <constraint firstAttribute="width" constant="120" id="pYy-wc-wDS"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-YN-hkq">
-                        <rect key="frame" x="322" y="151" width="25" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="25" id="2RR-LR-uZC"/>
-                            <constraint firstAttribute="width" secondItem="5KZ-YN-hkq" secondAttribute="height" id="kk0-hr-gEX"/>
-                        </constraints>
-                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="cart" catalog="system">
-                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
-                        </state>
-                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LUz-st-B5U">
+                        <rect key="frame" x="349" y="143" width="25" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-YN-hkq">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="2RR-LR-uZC"/>
+                                    <constraint firstAttribute="width" secondItem="5KZ-YN-hkq" secondAttribute="height" id="kk0-hr-gEX"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="cart" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBc-AI-4Gt">
+                                <rect key="frame" x="25" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="6c8-ax-1ZI"/>
+                                    <constraint firstAttribute="width" secondItem="EBc-AI-4Gt" secondAttribute="height" id="vT4-rI-TiL"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="heart" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3JG-qS-FBA" firstAttribute="leading" secondItem="3TY-iG-Kaf" secondAttribute="leading" constant="16" id="6tU-vx-Edv"/>
+                    <constraint firstAttribute="trailing" secondItem="LUz-st-B5U" secondAttribute="trailing" constant="16" id="Bla-Gc-MUt"/>
+                    <constraint firstItem="LUz-st-B5U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zXn-1e-t9I" secondAttribute="trailing" constant="8" id="EGb-an-6Xz"/>
                     <constraint firstItem="zXn-1e-t9I" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3JG-qS-FBA" secondAttribute="bottom" id="Yf8-Nu-vIF"/>
                     <constraint firstItem="zXn-1e-t9I" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3xv-C9-p6i" secondAttribute="bottom" constant="5" id="Z5n-mw-PCb"/>
-                    <constraint firstItem="5KZ-YN-hkq" firstAttribute="centerY" secondItem="EBc-AI-4Gt" secondAttribute="centerY" id="dfe-gf-puE"/>
                     <constraint firstItem="zXn-1e-t9I" firstAttribute="leading" secondItem="3xv-C9-p6i" secondAttribute="leading" id="ekU-25-wBU"/>
+                    <constraint firstAttribute="bottom" secondItem="LUz-st-B5U" secondAttribute="bottom" constant="16" id="fdz-Sk-1s3"/>
                     <constraint firstItem="3xv-C9-p6i" firstAttribute="leading" secondItem="j7Z-n3-ZKh" secondAttribute="leading" id="g8B-cN-Nx7"/>
                     <constraint firstItem="3JG-qS-FBA" firstAttribute="top" secondItem="3TY-iG-Kaf" secondAttribute="top" constant="16" id="iaX-Ac-18d"/>
-                    <constraint firstItem="EBc-AI-4Gt" firstAttribute="leading" secondItem="5KZ-YN-hkq" secondAttribute="trailing" constant="10" id="jL6-d1-lBN"/>
                     <constraint firstItem="3xv-C9-p6i" firstAttribute="leading" secondItem="3JG-qS-FBA" secondAttribute="trailing" constant="8" symbolic="YES" id="oJt-fa-AIP"/>
                     <constraint firstItem="j7Z-n3-ZKh" firstAttribute="top" secondItem="3JG-qS-FBA" secondAttribute="top" id="p0L-JI-X8E"/>
                     <constraint firstAttribute="bottom" secondItem="zXn-1e-t9I" secondAttribute="bottom" constant="16" id="rxx-BJ-Ge5"/>
-                    <constraint firstAttribute="trailing" secondItem="EBc-AI-4Gt" secondAttribute="trailing" constant="8" id="tjg-Ld-APW"/>
                     <constraint firstItem="3xv-C9-p6i" firstAttribute="top" secondItem="j7Z-n3-ZKh" secondAttribute="bottom" constant="4" id="uWB-nv-UZP"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3xv-C9-p6i" secondAttribute="trailing" constant="16" id="v52-xZ-iNd"/>
-                    <constraint firstAttribute="bottom" secondItem="EBc-AI-4Gt" secondAttribute="bottom" constant="8" id="yV5-eb-z82"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addToCartBtn" destination="5KZ-YN-hkq" id="Wid-FC-ZQZ"/>
                 <outlet property="itemImageView" destination="3JG-qS-FBA" id="Slo-Py-KeK"/>
                 <outlet property="priceLabel" destination="zXn-1e-t9I" id="lB6-OO-Xcm"/>
                 <outlet property="promotionLabel" destination="j7Z-n3-ZKh" id="4sD-ig-IP9"/>
+                <outlet property="saveToFavBtn" destination="EBc-AI-4Gt" id="NA1-DU-cjr"/>
                 <outlet property="titleLabel" destination="3xv-C9-p6i" id="Xb8-xn-TQp"/>
             </connections>
             <point key="canvasLocation" x="113.84615384615384" y="16.350710900473931"/>

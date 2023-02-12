@@ -50,6 +50,7 @@ class ProductListVC: UIViewController, UITableViewDelegate{
                     .subscribe(onNext: {
                         if let id = item.id{
                             ShoppingCartManager.shared().addToCart(id: id, count: 1, unitPrice: (item.price ?? 0))
+                            self.showToast("商品已加入購物車")
                         }
                     }).disposed(by: cell.reuseableDisposeBag)
             }.disposed(by: disposeBag)

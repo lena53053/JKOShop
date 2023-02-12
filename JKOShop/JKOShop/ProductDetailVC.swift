@@ -112,6 +112,12 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
     
     @IBAction func selectaddToCart(_ sender: BasicButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "addToCartDialogue") as! AddToCartDialogue
+        vc.addToCartSuccess
+            .subscribe(onNext: { _ in
+                
+                self.showToast("商品已加入購物車")
+                
+            }).disposed(by: vc.disposeBag)
         vc.modalPresentationStyle = .overFullScreen
         vc.vm = self.vm
         self.present(vc, animated: false, completion: nil)

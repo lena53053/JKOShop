@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class AddToCartDialogue:UIViewController{
     
@@ -20,6 +22,8 @@ class AddToCartDialogue:UIViewController{
     @IBOutlet weak var minusBtn: UIButton!
     
     var vm:ProductDetailVM?
+    var addToCartSuccess = PublishRelay<Bool>()
+    var disposeBag = DisposeBag()
     
     lazy var dimView: UIView = {
             let dimmedView = UIView()
@@ -75,6 +79,7 @@ class AddToCartDialogue:UIViewController{
             ShoppingCartManager.shared().addToCart(id: id,
                                                    count: self.vm!.count,
                                                    unitPrice: self.vm!.unitPrice)
+            self.addToCartSuccess.accept(true)
             self.dismiss(animated: false)
         }
     }

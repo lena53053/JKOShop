@@ -33,6 +33,7 @@ class PaymentManager: NSObject{
     func payOrder(list: [CartItem], total:Int){
         let id = "\(Date().timeIntervalSince1970)"
         self.saveOrderHistory(id: id, itemList: list, total: total)
+        self.refreshProductStock(itemList: list)
     }
     
     func saveOrderHistory(id:String, itemList:[CartItem], total:Int){
@@ -54,7 +55,16 @@ class PaymentManager: NSObject{
         }catch{
             print(error)
         }
-        
+    }
+    
+    func refreshProductStock(itemList:[CartItem]){
+        if let productList = ProductManager.shared().productList{
+            for item in itemList{
+                if let firstIndex = productList.firstIndex(where: {$0.id == item.product?.id}){
+                    ProductManager.shared().productList![firstIndex].stock! -= item.count
+                }
+            }
+        }
     }
 
 }

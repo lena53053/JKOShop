@@ -16,6 +16,8 @@ class AddToCartDialogue:UIViewController{
     @IBOutlet weak var priceLabel: UILabel!
     
     @IBOutlet weak var addToCartBtn: BasicButton!
+    @IBOutlet weak var plusBtn: UIButton!
+    @IBOutlet weak var minusBtn: UIButton!
     
     var vm:ProductDetailVM?
     
@@ -43,6 +45,8 @@ class AddToCartDialogue:UIViewController{
             self.stockLabel.text = "In Stock: \(model.stock ?? 0)"
             self.priceLabel.text = "$\(model.price ?? 0)"
         }
+        
+        self.refreshPriceLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,6 +99,11 @@ class AddToCartDialogue:UIViewController{
         let unitNetPrice = PaymentVM().calUnitNetPrice(count: self.vm?.count ?? 0,
                                                        unitPrice: self.vm?.unitPrice ?? 0)
         priceLabel.text = "$\(unitNetPrice)"
+        
+        if let count = self.vm?.count{
+            self.minusBtn.isEnabled = count > 1
+            self.plusBtn.isEnabled = count < self.vm?.model.value?.stock ?? 0
+        }
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil){

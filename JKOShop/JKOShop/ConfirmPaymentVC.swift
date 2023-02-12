@@ -23,6 +23,7 @@ class ConfirmPaymentVC:UIViewController, UITableViewDelegate, UITableViewDataSou
     
     var disposeBag = DisposeBag()
     var vm = PaymentVM()
+    var paymentSuccess = PublishRelay<Bool>()
     
     var type:PaymentViewListType = .payment
     
@@ -77,6 +78,7 @@ class ConfirmPaymentVC:UIViewController, UITableViewDelegate, UITableViewDataSou
             if let list = self.vm.payingOrderList{
                 PaymentManager.shared().payOrder(list: list, total: self.vm.totalPrice)
                 ShoppingCartManager.shared().deleteFromtCart(idList: self.vm.selectedItemList  ?? [])
+                self.paymentSuccess.accept(true)
                 self.dismiss(animated: true)
             }
         }else{

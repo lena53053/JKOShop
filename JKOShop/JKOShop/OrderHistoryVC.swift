@@ -24,6 +24,8 @@ class OrderHistoryVC:UIViewController, UITableViewDelegate{
         let nib = UINib(nibName: "OrderHistoryCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "orderHistoryCell")
         
+        
+        
         self.vm.orderHistoryList.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: "orderHistoryCell", cellType: OrderHistoryCell.self)){ indexPath, item, cell in
                 if let timeStamp = item.timeStamp{
@@ -43,6 +45,12 @@ class OrderHistoryVC:UIViewController, UITableViewDelegate{
                 let nav = UINavigationController(rootViewController: vc)
                 self.present(nav, animated: true)
             }).disposed(by: disposeBag)
+        
+        self.vm.orderHistoryList
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext:{ list in
+                    self.tableView.isHidden = list.count == 0
+            }).disposed(by: disposeBag)
     }
     
     func initializeUI(){
@@ -54,5 +62,9 @@ class OrderHistoryVC:UIViewController, UITableViewDelegate{
         super.viewWillAppear(animated)
         
         self.vm.fetchOrderHistoryList()
+    }
+    
+    @IBAction func selectProceedToProducts(_ sender: BasicButton) {
+        self.tabBarController?.selectedIndex = 0
     }
 }

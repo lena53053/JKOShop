@@ -42,6 +42,9 @@ class CartListVC : UIViewController, UITableViewDelegate{
                     cell.priceLabel.text = "$\(unitNetPrice)"
                     cell.countLabel.text = "\(item.count)"
                     
+                    cell.minusBtn.isEnabled = item.count > 1
+                    cell.plusBtn.isEnabled = item.count < product.stock ?? 0
+                    
                     if let id = product.id{
                         self.vm.selectedItemList
                             .subscribe(onNext: { list in
@@ -70,6 +73,12 @@ class CartListVC : UIViewController, UITableViewDelegate{
                     }
                 }
             }.disposed(by: disposeBag)
+        
+        self.vm.cartItemList
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext:{ list in
+                    self.tableView.isHidden = list.count == 0
+            }).disposed(by: disposeBag)
         
         self.proceedToPaymentBtn.rx.tap
             .subscribe(onNext: {
@@ -101,5 +110,9 @@ class CartListVC : UIViewController, UITableViewDelegate{
         self.paymentBgView.layer.shadowOpacity = 0.1
         self.paymentBgView.layer.shadowOffset = .zero
         self.paymentBgView.layer.shadowRadius = 6
+    }
+    
+    @IBAction func selectProceedToProducts(_ sender: BasicButton) {
+        self.tabBarController?.selectedIndex = 0
     }
 }

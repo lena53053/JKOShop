@@ -26,7 +26,11 @@ class ProductListVC: UIViewController, UITableViewDelegate{
         
         ShoppingCartManager.shared().cartBadgeNumber
             .subscribe(onNext: { badgeNum in
-                self.tabBarController?.tabBar.items?[1].badgeValue = "\(badgeNum)"
+                if badgeNum == 0{
+                    self.tabBarController?.tabBar.items?[1].badgeValue = nil
+                }else{
+                    self.tabBarController?.tabBar.items?[1].badgeValue = "\(badgeNum)"
+                }
             }).disposed(by: disposeBag)
         
         let nib = UINib(nibName: "ItemListCell", bundle: nil)

@@ -35,8 +35,7 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
         super.viewDidLoad()
         
         self.initializeUI()
-        self.vm.initializeData()
-
+    
         self.vm.model
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { product in
@@ -46,11 +45,8 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
                 self.decsLabel.text = product?.description ?? ""
                 
                 let stock = product?.stock ?? 0
-                if stock == 0{
-                    self.addToCartBtn.isEnabled = false
-                }else{
-                    self.stockLabel.text = "In Stock: \(stock)"
-                }
+                self.stockLabel.text = "In Stock: \(stock)"
+                self.addToCartBtn.isEnabled = stock != 0
                 
                 let formatter = DateFormatter("YYYY-MM-dd", secondsFromGMT: 0)
                 self.createTimeLabel.text = "Created Time: \(formatter.string(from: product?.createTime ?? Date()))"
@@ -62,14 +58,6 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
                 }
                 
                 self.imageViewer.reloadData()
-            }).disposed(by: disposeBag)
-        
-        self.addToCartBtn.rx.tap
-            .subscribe(onNext:{
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "addToCartDialogue") as! AddToCartDialogue
-                vc.modalPresentationStyle = .overFullScreen
-                vc.vm = self.vm
-                self.present(vc, animated: false, completion: nil)
             }).disposed(by: disposeBag)
     }
     
@@ -91,6 +79,7 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.vm.initializeData()
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
@@ -119,5 +108,29 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
             return 1
         }
         return value
+    }
+    
+    @IBAction func selectaddToCart(_ sender: BasicButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "addToCartDialogue") as! AddToCartDialogue
+        vc.modalPresentationStyle = .overFullScreen
+        vc.vm = self.vm
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    @IBAction func selectProceedToPayment(_ sender: BasicButton) {
+        let cartItem = CartItem(product: self.vm.model.value, count: 1)
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "confirmPaymentVC") as! ConfirmPaymentVC
+        vc.paymentSuccess
+            .subscribe(onNext: { result in
+                if result{
+                    self.vm.initializeData()
+                }
+            }).disposed(by: vc.disposeBag)
+        
+        vc.vm.payingOrderList = [cartItem]
+        vc.modalPresentationStyle = .overCurrentContext
+        let nav = UINavigationController(rootViewController: vc)
+        self.present(nav, animated: true)
     }
 }

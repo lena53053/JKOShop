@@ -131,6 +131,7 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
             .subscribe(onNext: { result in
                 if result{
                     self.vm.initializeData()
+                    self.showToast("訂單已付款成功")
                 }
             }).disposed(by: vc.disposeBag)
         

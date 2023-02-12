@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 
 class CartListVC : UIViewController, UITableViewDelegate{
     @IBOutlet weak var tableView: UITableView!
@@ -44,6 +45,11 @@ class CartListVC : UIViewController, UITableViewDelegate{
                     
                     cell.minusBtn.isEnabled = item.count > 1
                     cell.plusBtn.isEnabled = item.count < product.stock ?? 0
+                    cell.itemImageView.kf.setImage(with: URL(string: TEMP_IMG_URL),
+                                                  placeholder: UIImage(named: "image_placeholder"),
+                                                  options: [.transition(.fade(0.5)),
+                                                            .onlyLoadFirstFrame,
+                                                            .cacheMemoryOnly])
                     
                     if let id = product.id{
                         self.vm.selectedItemList

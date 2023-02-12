@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import iCarousel
+import Kingfisher
 
 class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
     
@@ -95,6 +96,11 @@ class ProductDetailVC: UIViewController, iCarouselDelegate, iCarouselDataSource{
                     itemView = UIImageView(frame: self.imageViewer.frame)
                     itemView.image = UIImage(named: "image_placeholder")
                     itemView.contentMode = .scaleAspectFit
+                    itemView.kf.setImage(with: URL(string: TEMP_IMG_URL),
+                                                    placeholder: UIImage(named: "image_placeholder"),
+                                                    options: [.transition(.fade(0.5)),
+                                                              .onlyLoadFirstFrame,
+                                                              .cacheMemoryOnly])
                 }
         return itemView
     }

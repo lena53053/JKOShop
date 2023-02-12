@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
+
+
+let TEMP_IMG_URL = "https://thumbs.dreamstime.com/b/portrait-adult-black-cat-white-background-quietly-sits-looks-aside-153205067.jpg"
 
 class ProductListVC: UIViewController, UITableViewDelegate{
     @IBOutlet weak var tableView: UITableView!
@@ -53,6 +57,12 @@ class ProductListVC: UIViewController, UITableViewDelegate{
                             self.showToast("商品已加入購物車")
                         }
                     }).disposed(by: cell.reuseableDisposeBag)
+                
+                cell.itemImageView.kf.setImage(with: URL(string: TEMP_IMG_URL),
+                                                placeholder: UIImage(named: "image_placeholder"),
+                                                options: [.transition(.fade(0.5)),
+                                                          .onlyLoadFirstFrame,
+                                                          .cacheMemoryOnly])
             }.disposed(by: disposeBag)
         
         self.tableView.rx.modelSelected(ProductModel.self)

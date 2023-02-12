@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 
 enum PaymentViewListType{
     case payment
@@ -69,6 +70,11 @@ class ConfirmPaymentVC:UIViewController, UITableViewDelegate, UITableViewDataSou
             cell.price = unitPrice
             cell.count = list[indexPath.row].count
             cell.titleLabel.text = list[indexPath.row].product?.name ?? ""
+            cell.itemImageView.kf.setImage(with: URL(string: TEMP_IMG_URL),
+                                          placeholder: UIImage(named: "image_placeholder"),
+                                          options: [.transition(.fade(0.5)),
+                                                    .onlyLoadFirstFrame,
+                                                    .cacheMemoryOnly])
         }
         return cell
     }
